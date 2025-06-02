@@ -1,0 +1,453 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Task_1" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Task_1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Task_1" sap:VirtualizedContainerService.HintSize="925.2,4320" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome SMSWebUi" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="568,3551.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="Always" ScopeGuid="04f9e58a-87dc-41b9-a6b8-0d6f85f97b67" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,3262.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NSelectItem DisplayName="Select Item ''DB*''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="Testing" ScopeIdentifier="04f9e58a-87dc-41b9-a6b8-0d6f85f97b67" Version="V4">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="3">
+                  <x:String>Select Database</x:String>
+                  <x:String>Testing</x:String>
+                  <x:String>Products_Test</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="cgvakstage.com" CVScreenId="c52bc23a-54e3-4126-9cf6-1f79685c84cd" ContentHash="FKUUpU_eP0yui36vKPCrmA" CvElementArea="1015, 461, 359, 57" CvType="InputBox" DesignTimeRectangle="1016, 463, 356, 54" DesignTimeScaleFactor="1.125" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='form-select ng-untouched ng-pristine ng-invalid' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="a6965fb6-94eb-4947-aca9-52dcfe0e8918" InformativeScreenshot="2518879e9e523e937954b22d0e95a6bb.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/17YrRB2BJkeUbiqio2HyZQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="c52bc23a-54e3-4126-9cf6-1f79685c84cd" CvTextArea="1014, 429, 35, 17" CvTextArgument="DB*" CvType="Text" DesignTimeRectangle="1016, 424, 33, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='DB' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='DB*' /&gt;" Guid="241804ac-441a-470b-826d-6dfff4204a22" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into ''Username*''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="DebuggerApi" ScopeIdentifier="04f9e58a-87dc-41b9-a6b8-0d6f85f97b67" Text="Antonio" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="cgvakstage.com" CVScreenId="c52bc23a-54e3-4126-9cf6-1f79685c84cd" ContentHash="-q8Z6j2OgU6COE8XQ_UtRA" CvElementArea="1015, 564, 358, 57" CvType="InputBox" DesignTimeRectangle="1014, 518, 360, 56" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='input ng-untouched ng-pristine ng-invalid' placeholder='Please Enter Username' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="fea6d75d-980f-4b1c-8517-6f6069b9f44d" InformativeScreenshot="08c7584f9921322d61325e544aee3f8f.png" IsResponsive="True" Reference="1f0TvZLH2E-RsUEpE_OEOA/rKlzCleiM0Gz_63HO33AGg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="c52bc23a-54e3-4126-9cf6-1f79685c84cd" CvTextArea="1014, 531, 103, 17" CvTextArgument="Username*" CvType="Text" DesignTimeRectangle="1014, 479, 103, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Username' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Username' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Username*' /&gt;" Guid="e6d1b79d-bf1d-479e-8563-db5f4b4d9343" ImageBase64="" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into ''Password*''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="DebuggerApi" IsPassword="True" ScopeIdentifier="04f9e58a-87dc-41b9-a6b8-0d6f85f97b67" Text="CG-vak123" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="cgvakstage.com" CVScreenId="c52bc23a-54e3-4126-9cf6-1f79685c84cd" ContentHash="hGUtmLXfaUOS0kUtwgQUpw" CvElementArea="1015, 668, 358, 56" CvType="InputBox" DesignTimeRectangle="1016, 669, 356, 55" DesignTimeScaleFactor="1.125" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='input ng-untouched ng-pristine ng-invalid' placeholder='Please Enter Password' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="0b27c4b2-2d77-47cb-85f7-88ff8b725e65" InformativeScreenshot="f08fbafd46e9c660b6bddcdcfb569a3e.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/Zg7r9Vp4UkKkhHLcWbt4GA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="c52bc23a-54e3-4126-9cf6-1f79685c84cd" CvTextArea="1014, 635, 97, 17" CvTextArgument="Password*" CvType="Text" DesignTimeRectangle="1016, 630, 96, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Password*' /&gt;" Guid="13b2c60b-f990-4b0e-b772-1733d4326603" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Login''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="04f9e58a-87dc-41b9-a6b8-0d6f85f97b67" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="cgvakstage.com" CVScreenId="c52bc23a-54e3-4126-9cf6-1f79685c84cd" ContentHash="zDdklT7-k0icGvqyYy8sKg" CvElementArea="1135, 809, 118, 60" CvTextArea="1167, 830, 50, 20" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="1138, 812, 112, 56" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='input' aaname='Login' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Login' /&gt;" Guid="9a9ded73-63c8-4307-8d1d-f22a783c5c64" InformativeScreenshot="da2fc0690200a70ad945765093f6c7b8.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/7-l2ncjvx0afmf4Hb6dNuQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Reports''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="04f9e58a-87dc-41b9-a6b8-0d6f85f97b67" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="cgvakstage.com" CVScreenId="67ebb6d7-58bb-4aaf-961e-03b79d58fbf3" ContentHash="9ttuRWXDE0GNwxB1nx5Bww" CvElementArea="671, 180, 21, 21" CvTextArea="602, 182, 66, 21" CvTextArgument="Reports" CvType="ArrowButton" DesignTimeRectangle="596, 170, 100, 47" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='navbarDropdown' tag='A' type='' class='nav-link dropdown-toggle' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="90745d96-f05e-42b2-969c-1d1f83e4b684" InformativeScreenshot="af6aede3ef9000f5337be71fd3f8fcaf.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/-Aby89jcKE2-heJkN2sLfQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="67ebb6d7-58bb-4aaf-961e-03b79d58fbf3" CvTextArea="602, 182, 66, 21" CvTextArgument="Reports" CvType="Text" DesignTimeRectangle="602, 183, 66, 21" ElementType="Text" Guid="b1e388c9-5fc5-47f1-9102-66b4d40e780d" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Reports''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="04f9e58a-87dc-41b9-a6b8-0d6f85f97b67" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="cgvakstage.com" ContentHash="rLhe-TZAIUmODxYm1ZPzTw" DesignTimeRectangle="597, 294, 178, 39" DesignTimeScaleFactor="1.125" ElementType="Text" FullSelectorArgument="&lt;webctrl id='reports' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='reports' tag='A' type='' class='dropdown-item' aaname='Reports' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Reports' /&gt;" Guid="ae5c9e01-e633-4c82-86ea-e98058bfa4c6" InformativeScreenshot="0b571664dc8e55134748530b5cf80821.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/z-3ByPo_QkGJ7ndjCnqAjg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Missing Client Contact …''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="04f9e58a-87dc-41b9-a6b8-0d6f85f97b67" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="cgvakstage.com" ContentHash="BaTnG1vinUy38hawgS27rw" DesignTimeRectangle="1547, 410, 246, 53" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl id='nav-home-tab31' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nav-home-tab31' tag='BUTTON' type='button' class='nav-link' aaname='Missing Client Contact Data' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Missing Client Contact Data' /&gt;" Guid="2a30e6b8-6e43-4ecd-a74f-8e4616427d26" InformativeScreenshot="53200fc944106d59806ef76d04ab47a8.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/QVKINISW3kW9jrkZvjVfZQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''SPAN''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="04f9e58a-87dc-41b9-a6b8-0d6f85f97b67" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="cgvakstage.com" ContentHash="B7rIkZWE2kSztcipMuTA8Q" DesignTimeRectangle="508, 597, 225, 43" DesignTimeScaleFactor="1.125" FullSelectorArgument="&lt;webctrl class='dropdown-btn' idx='3' parentid='nav-home31' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='dropdown-btn' type='' parentid='nav-home31' tag='SPAN' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Size' /&gt;" Guid="baddf9b1-ba22-44ac-b6e3-5c51ee783e00" InformativeScreenshot="5abbcc6b06ee2bb66f59699163bf697a.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/AykA82NLHECch9bWM3uMcw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="687, 597, 45, 43" FullSelectorArgument="&lt;webctrl class='dropdown-multiselect__caret' idx='3' parentid='nav-home31' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='dropdown-multiselect__caret' type='' parentid='nav-home31' tag='SPAN' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="df413ec8-cbea-4b43-8ed8-5d63585985d1" SearchSteps="Selector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''ExMedium: 26-50''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="04f9e58a-87dc-41b9-a6b8-0d6f85f97b67" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="cgvakstage.com" ContentHash="HDYDUq8Yr0mhJQSbfArTIg" DesignTimeRectangle="509, 765, 223, 42" DesignTimeScaleFactor="1.125" ElementType="ListItem" FullSelectorArgument="&lt;webctrl idx='51' parentid='nav-home31' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='nav-home31' tag='LI' class='multiselect-item-checkbox ng-star-inserted' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='ExMedium: 26-50' /&gt;" Guid="1745b70f-fe98-4633-aa56-bef3e331bbbe" InformativeScreenshot="ac756504d9918bdedb8e330b93c2f2a8.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/CV3uXtlWDUm-H315EJrIrQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="520, 771, 201, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='ExMedium: 26-50' parentid='nav-home31' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='ExMedium: 26-50' parentid='nav-home31' tag='DIV' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='ExMedium: 26-50' /&gt;" Guid="c089d3c2-9d3b-4707-881f-323f8f9896b7" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Large: 51-100''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="04f9e58a-87dc-41b9-a6b8-0d6f85f97b67" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="cgvakstage.com" ContentHash="SVNXf8cSik6PiaOFB4XJfg" DesignTimeRectangle="520, 820, 201, 30" DesignTimeScaleFactor="1.125" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Large: 51-100' parentid='nav-home31' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Large: 51-100' parentid='nav-home31' tag='DIV' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Large: 51-100' /&gt;" Guid="6490e2c9-9b9f-4276-a7e9-b4697788a8d8" InformativeScreenshot="41310270e4720375d06704e83c38c483.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/ctf04BYC-Em2PmbUHU5A-A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Very large: 100+''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="04f9e58a-87dc-41b9-a6b8-0d6f85f97b67" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="cgvakstage.com" ContentHash="1d_TWHVr1kWGTUz0J6gP-g" DesignTimeRectangle="520, 982, 201, 30" DesignTimeScaleFactor="1.125" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Very large: 100+' parentid='nav-home31' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Very large: 100+' parentid='nav-home31' tag='DIV' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Very large: 100+' /&gt;" Guid="9a6f907e-6275-4de5-846d-61b251ef56b4" InformativeScreenshot="db1cb2e69d8e3eecf62eef8389d6d088.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/iPX5tGbBoUq8merpfw6NDQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Get Report''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="04f9e58a-87dc-41b9-a6b8-0d6f85f97b67" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="cgvakstage.com" ContentHash="Ph14dGIXPU2DKDvc7Pjgyw" DesignTimeRectangle="1767, 548, 131, 45" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='nav-home31' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='nav-home31' tag='BUTTON' type='button' class='btn btn-primary' aaname='Get Report' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Get Report' /&gt;" Guid="ebd31f29-9240-4c14-a54b-9ecf99124c30" InformativeScreenshot="1c884872d96b6ffe610bc9365726bd33.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/f08LEIOlzEqv2GVUlcZkJg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Double-click ''240''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="04f9e58a-87dc-41b9-a6b8-0d6f85f97b67" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="cgvakstage.com" CVScreenId="980c5a4c-1e8f-4ef7-b9b6-afdc831e665c" ContentHash="Lfycia6HqU2KeSpCFS8M2A" CvTextArea="1074, 676, 35, 17" CvTextArgument="240" CvType="Text" DesignTimeRectangle="909, 669, 366, 35" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='nav-home31' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl type='' class='text-center' tag='TD' aaname=' 240' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='240' /&gt;" Guid="5dbe95c6-640f-431d-a480-54f894a8617b" InformativeScreenshot="bddb3286e10613150375dbbf01f10bac.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/8Glfz2spAEqyUBGfoToN7w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                      <uix:Target CVScreenId="980c5a4c-1e8f-4ef7-b9b6-afdc831e665c" CvTextArea="930, 640, 322, 18" CvTextArgument="Clients Without required No.of DMs" CvType="Text" DesignTimeRectangle="909, 634, 366, 35" ElementType="Text" FuzzyAccuracy="0.85" FuzzySelectorArgument="&lt;webctrl parentid='nav-home31' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl aaname='Clients Without required No.of DMs' type='' tag='TH' class='text-center' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Clients Without required No.of DMs' /&gt;" Guid="d2a85741-4a12-4460-930a-7e8c0d1a57b8" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                      <uix:Target DesignTimeRectangle="918, 631, 343, 35" Guid="9abc98bb-5543-40b1-a7ab-2fc5ad36c5d3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAVQAAAAjCAYAAADLwvJ4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAwgSURBVHhe7ZxNSFzJFscvLX4QlCZEFCORBvElNEhDaGgSRGkcVJREhIeBwNAEAj4I9GJANwMJPAgRBBfCSBaCkEVDICjMoiEQFLIQhODOrUt3Lgfmvc15VN/6OFX3VPe9/RHzzFn8Ft4qq07VOfW/9XU7+Ps//wWGYRimdQL3AcMwDNMcwYtffwWGYRimdYIn3/4ChmEYpnVYUBmGYdoECyrDMEybYEFlGIZpEyyoDMMwbYIFlWEYpk2woDIMw7SJaxfUpcMq5DcPoHgcTfvp+HIChc0KTFWJNOb7cXoJ0zsVyO9fRNMYpg7fT1AP30F/EEAQ3IfsoXp+BJke8SyA4OlB9H9+Ki4gl5d9kX0Hs5F0lwMYrfVnAKPbbhrTCnO/z4R+CHKQ/TOa3hlusD+/HEG2mIGUbN/t9fNonhtCa4Iq3uSvyzCYScsADCAYuA+Dz3dh+ouTlxTUKyisDP9fd7IZfCUouOl7azKI5uHhVydtpxQZtLPrhdqz3pUDWHLLinCDB+B1c7gNt7sCCO6UoOD6rWPE9afJl5qvwEIk3TfWronTI8gMSG2Q9Jf9Y72waOcN6YPe7Cpkd87JcTFbvm/yTm7DHJFHsfR2GZW7Gh2zLdK8oJ6eQXbSbTiiqwDZTyj/j+DkTtjw6Y0scxgmPthp0y/Cl4UIiMyenVZ8JYPgzgZMu2VivDbHHYDfge3VjgXoz0Ncf5p8Iq5Gty6jebwxcw3oicN9ePDxKpruQAuqobuwC8VT+38sQQ0yMPExWm7IFTws4vLaH69NCuoVFJ6qWWkGxjbPYEk2cql6AJl70uC7GzCtGv8jOLkjNphti8Hf8Z7bOWSzxnm9L05Q2hU8nJZpiw22Orw2xx2A3wEW1DYQ159YUMWKkJhFe2Pm+6PFLvMGikS6ixZUPC5OLqG4WYJbss3diwfWzNwWVHesIarbcBv3XQfitTlBRYYNvSXekB83dON1cJBOPofseJgvsgw4PoPcSg66xdJL/F9PBgafV2D2BNdlgmts+xKmystwS+3JDuRgbEsJnKnHBnfoFcxulmHwXp9OT92bgfFNeplhQOKI94G/7sMQrsvaF6VF2A6mRjajAbh1CYWXM562I04vIP98Bvr1EqwPbuXLkD90Zg5egTR1hv5yBrdivM4eMCo7/2kXRobC/xnbMXkWPu7CWNZsI/n9QPs8L/vRxJQ/zsxgRG0l2q/zjb+DqfdlSNfqtPdY5/7YgBEUP93ZVZjcI8aH8AOK7dS9Zcju7zYnqKKeZ0d2HnKsobrjxEA9YpURtdPtUwpSUCULW6tyCy1trfi0b+5mQt3pWYNHzixWMCe31ILx+7J/XFua1QBDU4Jq9g1XoUAY/uTbCUzcCQ3SbwvSyZ5APz6AUbTv0n3HNFAIk5nyG6d1D8gB2IPy6o4/h8nHw9CLykndGYbeoTI8knUWyzlT35Cdt9Ge5uxv8n/xW1gNyulVGK0NPrSP+uc7SMu+eIC2RVxBrW9z3LZLxBYNmjEH6n9q5OztGUJQQlxBrcK46CvsK/H34+0YgpqGbvR/SkQWtlehW9nVlYZeJZZBAOnyGSoLr5KieY2NIq8nzpoR1J60sQ/FMo6foGfYTASCNIxuY1G1Vy5BV58+rFHEFdTRZ2vSFsfX5FhLGAM+YpchY0P7pA96xd9ozFHUE1SsKyn0EtG+WdyGSbkNGe3DM5i4G9qRWVfbdHZ8t6IBiqYEtfBUNrreTMSFdDIV6GifI7sBU+o61ZeKFtnb62r2hd6CA6uQVwdhSJBxx9M2iCAx5eAZ98LredmhM5D7TLRJQRw+TT0LnSFmoCpItJO35IDtWYMpVA4ZTD6bcdtFP6m2o37CbZ96JgN/YBlyaiZxcg65onq+BlPqRUUIilunJUze/AQ6bwDBvRJMvj+Duc/nMCf8/HUfRmRa+sWRXtaJmUkoHAWYVFfK0Coo/epMB7vJ2yFBre3jbUD+wznMfb6ABeFvbUsaRt6q2LyC4is5QNGMyRyKpM3+5+klTL0wgzkqBhi8NYBeKjG21xLFgIekZeCZfRytIMcAlY5WfLqO6X0oqllocd8WwA8b0Cv7qUj4t2UNkDQnqKpRMTupBulkItA/78JgLV8fZN7bZeiOy+/Kkzy87LXzaht1Xp8Nder8egaPNiuQ36xC0d2nwpxWpB3q8Em1K6xHzejVbF0fVk3bTieDyWdzorYfwJjMa15GErR9owcyFXBOna0LKhJHiV75RJZsJk7UFomZMfrzdkRQI/WZl2fkhFkPUnMoqX3j5rWE0i7fxsmHJg/9r+QMnoyZhDFAkryMdguqPsxF5Vl16JeyHV+P/hn66NbLM9K/LWuA5McTVH0q2AfpX0owtoIoZMI0fTLuD0LSRtIGAboDKuqdLkP231UoHsfdVzL/n/7t3DhH2anqrdni5KVsTiqojdruLUNA+IAKOKfO1gU1mlevfHpyMIL9vlKCwdpyzbyUdBvnK04dRHvIZyGJBTUS82gJf3fGjteVZbnXKmY9IpaQHUr8NH5/Nspn9hblFhLlb+oZboOnfyyaKMPfbzTkGEA0FFQknlr0XZEl/Nu6BoQ0J6idXPLjJaEX1RHR4NI2uqLitUFycl47KHD3s1L/KEE+xpdLetYp7ga+DZcJZsmt9n7EskG95aPXrMhg8tqcoO3eMgTGB7peMuDsOjsiqMruekgbyb6qQcQU+SykLYKq+q8OYb1+O+r5s3G+S3MwKpbClL+pZ1QbIv2JaKIMf7/R+P3qpNcR1Cfv5RacWN7jbRa1DUD4t0aLGiBoSlD1IYw4qSX3XFo4lEKNpcvGUMEVQnU8bYPDySXMfjiAyZfz0K8OFmLsLemZdc8aTMglILZJLQtHX5kNcbd9ZDB5bU7Qdm8Zgvo+uBZBjcw6o/jzEu0hn4W0U1Cjs06Xenn9/oyVr6qWrAEMPluL+jtpDFA0UYa/32jIMaBpcCil61AHUGLScqEPqkZqqwRbv9wYrNGsBjQrqPhAoO3XpvQJeHQPNYonuChR8drwF8ztvAmXaP86sPe19L5Q9GJ+BPealPt1lBykKXUSj/d2JWQweWxO1vY6e1/Hu9puXY73pdZZQdWBTuxTuvj3NImYqiNkrQsqWrFF9kWjaN9E8vr9aePPZ27fKHDMJIwBkuRl1Os3CnIMSBpemyJmranH8+EYRnFC+bwtGtC0oH67hPy8ulKQg4n3F/pwZelTBcZiX+yngh8tX/BJoujQvQ243ZNDX1z4gysqKtiGYRjfR/n1Kb3zNYf+CsoVMwpn6ecGkN70DqEuH5PB5LM5YdsTnc7qOgMYeq1emFcw+3qZOEHHAjQPuUY/ckOIlebYvJS6i7vmzrE4BX9ZgFT2DRTVM2Rj41N+1Cd3yzClyvhyBBP6ClDzgipOkPWNA3E7QfWj6N9fhqF3saKftfeU301zrmQ5cZsoBoTIbG3A2Mtd64eLkpZRt98IyDEgLva/Xg5P6etd7Md1OJf4a4dRbn7s87ZoQNOCKoIfByPBwAzkGn56Sglq9B5qMOC71+cPLkpUnpxWzY+xWLZcQmHR3Ker3UEbQn87DvShT3tJwbQFF19kj9iMg8lrc9K2x70/KMAb9O791hDLX0m+QCHECmPdQ635Atk5sAoFanAL6t5DDQcMLjfl5G1JUN17qOLOpffutNO3rdxDpfJpARA4IpAkBvRK0enHJGXE6DcXHbse6n56atWBPzO1P0clBbVNGtC8oArEm3W9ZH1ZEP44ivtFU0JBFYgN4ufo6x/5NUbuI95i8AcXKSpiwO6/01/niN8bmNRfuoi3YAnS1kX6HIyuoxlHI9T9Us/ywHzbT/xYik9QvTYnb3u8L1wkx/YvBNW+5tk7ggcef81tlfSJdm155ZanIMTKZemwAuN5U3f4lZw9UwqhvpSq1rdRtb0rDemVCsxuEvYQNtKD1mZhbxtG0Rdewp7RchXm3Pghv5Q60mPB9aeN3+8KfRLuCqqqO04MnJ7Ag4xIH4axHTctZhkx+w1DCmpXGvrzpcY/juLWofzobK/QgipoXQNaE1SG+eGo85JmmA7DgsrcMFhQmeuDBZW5YbCgMtcHCypzw2BBZa4PFlSGYZg2wYLKMAzTJlhQGYZh2gQLKsMwTJtgQWUYhmkT/wMYsKvS2oG7RgAAAABJRU5ErkJggg==" SearchSteps="Image" TargetType="ImageBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Element 'Element 'Missing Client Contact …''" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="cgvakstage.com" CVScreenId="9b8c964b-b3a6-4aa1-87f1-93dc2fdbc282" ContentHash="dzfjGB7G-kqV5RYN7Ekbvw" CvElementArea="1725, 217, 28, 28" CvTextArea="179, 220, 293, 26" CvTextArgument="Missing Client Contact Data" CvType="CloseButton" DesignTimeRectangle="153, 203, 1632, 57" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-layout&amp;gt;div&amp;gt;app-reports&amp;gt;p-dialog&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='p-dialog-header ng-tns-c51-50 ng-star-inserted' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Missing Client Contact Data' /&gt;" Guid="519b55e5-fdb5-4792-8670-3484e56bb470" InformativeScreenshot="9059d8e7ce82db1bf0b1cf5597c06482.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/w4LyuFkrxUSP2V0JKWFXow" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt]" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='SI No' ReferenceIdx='0' Name='SI No'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Company Name' ReferenceIdx='1' Name='Company Name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Emp Size' ReferenceIdx='2' Name='Emp Size'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Total No.of Tel.Phone Nos Available' ReferenceIdx='3' Name='Total No.of Tel.Phone Nos Available'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Total No.of Mbl Nos Available' ReferenceIdx='4' Name='Total No.of Mbl Nos Available'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='No.of DM Phone Nos Available' ReferenceIdx='5' Name='No.of DM Phone Nos Available'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='No.of DM Names Available' ReferenceIdx='6' Name='No.of DM Names Available'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='LinkedIn info(Y/N)' ReferenceIdx='7' Name='LinkedIn info(Y/N)'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='No of EmailIds' ReferenceIdx='8' Name='No of EmailIds'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='SI No' attr='fulltext' /&gt;&lt;column name='Company Name' attr='fulltext' /&gt;&lt;column name='Emp Size' attr='fulltext' /&gt;&lt;column name='Total No.of Tel.Phone Nos Available' attr='fulltext' /&gt;&lt;column name='Total No.of Mbl Nos Available' attr='fulltext' /&gt;&lt;column name='No.of DM Phone Nos Available' attr='fulltext' /&gt;&lt;column name='No.of DM Names Available' attr='fulltext' /&gt;&lt;column name='LinkedIn info(Y/N)' attr='fulltext' /&gt;&lt;column name='No of EmailIds' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182.4" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="04f9e58a-87dc-41b9-a6b8-0d6f85f97b67" Version="V4">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="http://cgvakstage.com:8092/#/bde/reports" ContentHash="zBuocSsuYEuj57xufKvbSg" DesignTimeRectangle="171, 269, 1591, 19554" DesignTimeScaleFactor="1.125" FullSelectorArgument="&lt;webctrl aria-role='table' parentid='pr_id_71' tag='TABLE' /&gt;" Guid="f6b1d04a-fd44-4fe8-8b3d-f1edc3363f04" InformativeScreenshot="7b23e27d7cf5463eecd4dd4a2fb46c7b.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/QkHKcI4ViEGs-l8TphcsXQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="8bp5pS-YK0udW5kqZj21-w" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAKhSURBVEhLlZYxaFRBEIYPxZCYXO55dyQaYy4rayWrYimKKQQbixSCSJogVlZptLIIWGgZLKwsgoWVYhKwUZATUigWRgS1sIghYukZwUbwyR9ulrmZ3bfvBv7i7d2bj3s3//+mkud5payMdbPGumVjXWfPYP3f0OjBr9X65F35vSKpAylj3Slj3RIgxrqcVBnIvADfXzv0vtY4ckXeL6UOupBpY92isW6TQ2JArr1Djb/D2US71pw6K/v2AI11mbFuwVi3IZtLXZ27ls9cuKRgUvuGm39GDkw8y5pTLQ801s0b61Zk0yK9efsuX1l7rgBFGqyO/6jWDz8EUDUs0rnzF3Oq6WMnVOOkZMOUnjxd9cDlR491w5SMdW3ZNKaTp894GKrT+ZVnYy3dNKKBkbGffQGX7j/oAaIW79xTjWMiIDymmoe0s/Nb8vLNb1uqcUzwKoDwm2oudfPWbQ/Z3v6+C6Kav35DNQ8J/qS4UgApQKgAB4Rq48NH1TwkxCCAM7K5FIxOhceK4cGwYGioygTBaGNygWJMQbhgdCrYAmdoAFtQlQkCxB3FmoKQuNFRuCYgjM8rFQQ+S+WbgIsbHf8jHi9lKcSHpygI8EbhwKAXpdFTVRQE8CAHBsM7ZPRUxYIA4c2BQS9yo3/6/GV3eEjt1+tesAVVLAjgwUIgNzoKj5d/zpvJ4QkFgQQqL3KjkxViQAi2oAoFATwYBXKjo3CdAs5enuu5RwaBBGK98M1evHzlb8QvlbAQEOIWkUFAawbfaZK7TAoYE3Yb4nhgF4r9Jrqp9QvEBoc9hjN6gOzxYmqj6ZMCIlUwlXxbiwIFGFu2ghUBsY2HQEkgA+NtoqJPghBdseW3LyCpax0/WATCQNDIl5E6SAmD1Tp6fCs0EGX0H5z6d754KdW5AAAAAElFTkSuQmCC" InformativeScreenshot="a3eb4f53dfff31d02ab6687ff6cb8d4e.jpg" Reference="1f0TvZLH2E-RsUEpE_OEOA/Ndnaov1E9k-BFa8v7AULwg" Selector="&lt;html app='chrome.exe' url='http://cgvakstage.com:8092/#/auth' /&gt;" Url="http://cgvakstage.com:8092/#/auth" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="568,745.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="534.4,636" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="500.8,576" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="Report.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,243.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Sheet1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="433.6,183.2" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[dt]" />
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>

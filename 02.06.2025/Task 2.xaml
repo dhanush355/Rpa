@@ -1,0 +1,400 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Task_2" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Task_2_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Task_2" sap:VirtualizedContainerService.HintSize="925.2,4389.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt" />
+      <Variable x:TypeArguments="x:String" Name="texttable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="finans" />
+      <Variable x:TypeArguments="x:String" Name="text" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: http://cgvakstage.com:8092/#/auth" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="568,3242.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" IsDisplayNameAuto="True" OpenMode="Always" ScopeGuid="74c4bb3d-2c44-4df7-93ed-4f02b84163c0" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="451.2,2993.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+              <Variable x:TypeArguments="x:String" Name="Choose" />
+              <Variable x:TypeArguments="x:String" Name="UserName" />
+              <Variable x:TypeArguments="sd:DataTable" Name="dt" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NSelectItem DisplayName="Select Item 'DB*'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="417.6,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Testing" ScopeIdentifier="74c4bb3d-2c44-4df7-93ed-4f02b84163c0" Version="V4">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="3">
+                  <x:String>Select Database</x:String>
+                  <x:String>Testing</x:String>
+                  <x:String>Products_Test</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="cgvakstage.com" CVScreenId="c52bc23a-54e3-4126-9cf6-1f79685c84cd" ContentHash="FKUUpU_eP0yui36vKPCrmA" CvElementArea="1015, 461, 359, 57" CvType="InputBox" DesignTimeRectangle="1016, 463, 356, 54" DesignTimeScaleFactor="1.125" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='form-select ng-untouched ng-pristine ng-invalid' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="a6965fb6-94eb-4947-aca9-52dcfe0e8918" InformativeScreenshot="2518879e9e523e937954b22d0e95a6bb.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/17YrRB2BJkeUbiqio2HyZQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="c52bc23a-54e3-4126-9cf6-1f79685c84cd" CvTextArea="1014, 429, 35, 17" CvTextArgument="DB*" CvType="Text" DesignTimeRectangle="1016, 424, 33, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='DB' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='DB*' /&gt;" Guid="241804ac-441a-470b-826d-6dfff4204a22" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Username*'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="417.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" ScopeIdentifier="74c4bb3d-2c44-4df7-93ed-4f02b84163c0" Text="Antonio" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="cgvakstage.com" CVScreenId="c52bc23a-54e3-4126-9cf6-1f79685c84cd" ContentHash="-q8Z6j2OgU6COE8XQ_UtRA" CvElementArea="1015, 564, 358, 57" CvType="InputBox" DesignTimeRectangle="1014, 518, 360, 56" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='input ng-untouched ng-pristine ng-invalid' placeholder='Please Enter Username' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="fea6d75d-980f-4b1c-8517-6f6069b9f44d" InformativeScreenshot="08c7584f9921322d61325e544aee3f8f.png" IsResponsive="True" Reference="1f0TvZLH2E-RsUEpE_OEOA/rKlzCleiM0Gz_63HO33AGg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="c52bc23a-54e3-4126-9cf6-1f79685c84cd" CvTextArea="1014, 531, 103, 17" CvTextArgument="Username*" CvType="Text" DesignTimeRectangle="1014, 479, 103, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Username' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Username' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Username*' /&gt;" Guid="e6d1b79d-bf1d-479e-8563-db5f4b4d9343" ImageBase64="" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Password*'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="417.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="DebuggerApi" IsPassword="True" ScopeIdentifier="74c4bb3d-2c44-4df7-93ed-4f02b84163c0" Text="CG-vak123" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="cgvakstage.com" CVScreenId="c52bc23a-54e3-4126-9cf6-1f79685c84cd" ContentHash="hGUtmLXfaUOS0kUtwgQUpw" CvElementArea="1015, 668, 358, 56" CvType="InputBox" DesignTimeRectangle="1016, 669, 356, 55" DesignTimeScaleFactor="1.125" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='input ng-untouched ng-pristine ng-invalid' placeholder='Please Enter Password' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="0b27c4b2-2d77-47cb-85f7-88ff8b725e65" InformativeScreenshot="f08fbafd46e9c660b6bddcdcfb569a3e.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/Zg7r9Vp4UkKkhHLcWbt4GA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="c52bc23a-54e3-4126-9cf6-1f79685c84cd" CvTextArea="1014, 635, 97, 17" CvTextArgument="Password*" CvType="Text" DesignTimeRectangle="1016, 630, 96, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Password*' /&gt;" Guid="13b2c60b-f990-4b0e-b772-1733d4326603" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="417.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="74c4bb3d-2c44-4df7-93ed-4f02b84163c0" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="cgvakstage.com" CVScreenId="c52bc23a-54e3-4126-9cf6-1f79685c84cd" ContentHash="zDdklT7-k0icGvqyYy8sKg" CvElementArea="1135, 809, 118, 60" CvTextArea="1167, 830, 50, 20" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="1138, 812, 112, 56" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='input' aaname='Login' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Login' /&gt;" Guid="9a9ded73-63c8-4307-8d1d-f22a783c5c64" InformativeScreenshot="da2fc0690200a70ad945765093f6c7b8.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/7-l2ncjvx0afmf4Hb6dNuQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Repair Status(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="417.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="74c4bb3d-2c44-4df7-93ed-4f02b84163c0" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="cgvakstage.com" CVScreenId="58cf9549-d34a-4f46-8eea-00d65ea98a63" ContentHash="eafCFfPm8U-5Z9WJ8dnRJA" CvElementArea="1467, 235, 113, 40" CvTextArea="1482, 247, 82, 16" CvTextArgument="Repair Status" CvType="Button" DesignTimeRectangle="1469, 238, 109, 36" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Repair Status' tag='BUTTON' type='btn' /&gt;" Guid="a575c58f-8c3c-483e-b28d-15a8c9faa531" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHEAAAAoCAYAAADJ/xXvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATqSURBVHhe7ZtPaBtHFMZHK2l3tZKqQ2h0SVDAUGEIphBQoZCSkwMGgaEoB4PB1JhCsSEHQSC4JxsMCYGCDoYYfHHAIMghwWAQBIQwCDltQEcfetChoFvUQ0sPha+82VlpNSvrj23Z0nYGvsNqZvbNzG/emxmxw6DS1Ccm/6DS9KWeED/99S9++P1v3Pv0J744bSGudGOi8ScOxIO49EoeiDt//IMvfxUv+dhCvPbZ82KlaxSNP3E4bXEuxEdOXRCpwJ3fqGKPlyndvGotzkcG2YZIrso9UAGcbNVsj3SH1jZEirmeCkoTK+LlgUiLpxN7lSZcH+3Njgci34WqTcx0qPaZ8/JA9BRUmngpiD6QgugDKYg+kILoA/kGYuywiMhhw/P7/0FXDLGIMGNgbsXnEM6XEPOUvVpZSwmwbwpD2mnAyueg6aKNwSSCq0XEqnK56dBYIIZfieeTBqK7eWiMIfj8rEf5m1H06RxYPAuTPLfaROzde+izDIFsUZShfqRhvPXW7am329BYDhH592vSeCEKWU9MsId79nO1BnNhTniqCW3xoO0BkQUGbfkl9K9MO1/PQN/vhMjY/jZCd528FELPa+08qssWbAjRjTTY400YX1NZeXDrMGYZtJ86dbler/Gy5nq6K5JoG/W+trldV3nqO7cv2mJLGpdioftdeaktI+qaITZgPmQIPCogetJCvFSCPtMZKD4g5CHFJuInZ7BWCHYWZrmF+HEBQZZAeEd49JtNaCwF/dC24YHIEgg9qyB67F0nre9NsJl1WCW5/e5+uDxxgG3ZE/tDLEGPuyYRf5eJ8K7chuE1XoiucBraaorOZmAeuepszYPNbiPqeKLbQ6rvEdZF3ZMGYl1A6jBmOmHaA/HxQY/2Oe2qwfw2aUeCB8swdirSeihBHGB7JIjlPYRYEvq+k9dEtHAAiyau3M4hNRaIXRsblkL4hejsq5yUJzTjgii80laTe247pP2SR5CHIROB2wRB8mI3xK5BPEfHFUQ2ctDitLlxh27vmtjP9kgQT5uwllLdE4iikty2ETQWiG1PPBJh6LV4Joi38hyYt+4AiIfk0WkYb5wZa3vDpSC67ER/TIPpa7D4swRxgO3RIArRBHqWR4jW/2AG5rCbqB4aL0Tq0Eqq7Wn2YEjh1CUPRHc4pQngvIerBuPeBSDycGZ2JpajIq1NczDe0bMEcYDtnhC7wrlrXI4qiJD3tfPOYN6XJ+9oGjvEeLnIQdjrxxnMBwxsdhNR2qzQ5mU1A221wst2bWyqje6Nzf46AiwNfbeO2HFd5F0A4mkTkWwC7O6y/ecArYVHFZiPEi5Q1I8k9N0GYuXmQNs2xHmYtG5SW7eyYOw7ux9lZ4PmQLSjU+jnmrC915monrYOp/FDpPUknwHTc4hwcO4jBu1Ut2F9sMtxT1zcRNg5Ytyah9Fep5qI5rMIBMXRZKkA4z5DYMU1AYaCSB4uDvu0FpKdYALawst2OzjoJ/a6x/jZsb9tCq8mP84waE8JbAORRVGfl19DyDUu/Lhy27GdRGjjcn+GXDHEy8kTTpWGkoLoAymIPtBEQVS6mBREH0hB9IE8ENUni1Ok8z5ZVB8PT5HO+3hYfcY/Xer5Gb+6UDMl6nehhpK62jbhGnS1zUnqkumEadRLpk5S170nRxe67q3S9CUF0QfpP8n1MzYhQ2TwAAAAAElFTkSuQmCC" InformativeScreenshot="c0fd01bd9c20a34f612a3cf3d8c1be07.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/Hzl9_EVzuUG_SuBBL4fqyg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector, Image, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="417.6,327.2" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Choose the correct " OptionsString="[&quot;Resolved&quot; &amp; &quot;;&quot; &amp; &quot;Yet to Repair&quot;]" Title="Choose the given below">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[Choose]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <If Condition="[Choose = &quot;Resolved&quot;]" sap:VirtualizedContainerService.HintSize="417.6,692" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,276.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Resolved'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,216.8" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="74c4bb3d-2c44-4df7-93ed-4f02b84163c0" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="cgvakstage.com" CVScreenId="f6d06fb1-602c-4950-a6f0-df16b9ab7ee7" ContentHash="uH_LyCuuiU6CO6pqXEowZw" CvElementArea="99, 282, 24, 24" CvType="RadioButton" DesignTimeRectangle="103, 286, 18, 18" ElementType="RadioButton" FuzzySelectorArgument="&lt;webctrl id='repairOption' tag='INPUT' type='radio' class='form-check-input mt-1' aaname='Resolved' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="f3469e9a-10a7-4586-a608-270bc228ab65" InformativeScreenshot="8f9dbc520a59703aaa07c0ff025d0fb8.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/iKAplV6yakKdUYy4YqAAMg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CVScreenId="f6d06fb1-602c-4950-a6f0-df16b9ab7ee7" CvTextArea="129, 284, 73, 17" CvTextArgument="Resolved" CvType="Text" DesignTimeRectangle="130, 281, 73, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='form-check-label' tag='LABEL' type='' aaname='Resolved' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Resolved' /&gt;" Guid="eb271ae9-1efc-4b3a-8332-139606bbdd22" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,276.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yet to Repair'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,216.8" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="74c4bb3d-2c44-4df7-93ed-4f02b84163c0" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="cgvakstage.com" CVScreenId="f6d06fb1-602c-4950-a6f0-df16b9ab7ee7" ContentHash="Vz33MxvwYEKdBKZEvddu5g" CvElementArea="235, 282, 25, 25" CvType="RadioButton" DesignTimeRectangle="239, 286, 18, 18" ElementType="RadioButton" FuzzySelectorArgument="&lt;webctrl id='resolvedOption' tag='INPUT' type='radio' class='form-check-input mt-1' aaname='Yet to Repair' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e34f5514-760d-48db-ac5f-d651110d7129" InformativeScreenshot="a7f60b45083328e3569a19316f66cd92.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/KaY4y2PUAUWAoXsm2kcsWQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CVScreenId="f6d06fb1-602c-4950-a6f0-df16b9ab7ee7" CvTextArea="264, 285, 104, 20" CvTextArgument="Yet to Repair" CvType="Text" DesignTimeRectangle="266, 281, 102, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Yet to Repair' class='form-check-label' tag='LABEL' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Yet to Repair' /&gt;" Guid="044fe971-6ccd-44c4-a699-f7dbdff26fa1" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </If.Else>
+            </If>
+            <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="417.6,327.2" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter the user name:" OptionsString="[&quot;Adam-LG&quot; &amp; &quot;;&quot; &amp; &quot;Adrian-LG&quot; &amp; &quot;;&quot; &amp; &quot;Andreaw-LG&quot; &amp; &quot;;&quot; &amp; &quot;Austin-LG&quot; &amp; &quot;;&quot; &amp; &quot;Cecilia-LG&quot; &amp; &quot;;&quot; &amp; &quot;Grace-LG&quot; &amp; &quot;;&quot; &amp; &quot;Helen-LG&quot; &amp; &quot;;&quot; &amp; &quot;Henry-LG&quot; &amp; &quot;;&quot; &amp; &quot;Jaxson-ST&quot; &amp; &quot;;&quot; &amp; &quot;Liyon-LG&quot; &amp; &quot;;&quot; &amp; &quot;Miller-LG&quot; &amp; &quot;;&quot; &amp; &quot;Phebe-LG&quot; &amp; &quot;;&quot; &amp; &quot;RichardVaughn-ST&quot; &amp; &quot;;&quot; &amp; &quot;Rio-LG&quot; &amp; &quot;;&quot; &amp; &quot;Stan-LG&quot; &amp; &quot;;&quot; &amp; &quot;stacy&quot; &amp; &quot;;&quot; &amp; &quot;vincer&quot;]" Title="User name">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[UserName]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <uix:NSelectItem DisplayName="Select Item ''Date''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="417.6,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[UserName]" ScopeIdentifier="74c4bb3d-2c44-4df7-93ed-4f02b84163c0" Version="V4">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="18">
+                  <x:String>Select User</x:String>
+                  <x:String>Adam-LG</x:String>
+                  <x:String>Adrian-LG</x:String>
+                  <x:String>Andreaw-LG</x:String>
+                  <x:String>Austin-LG</x:String>
+                  <x:String>Cecilia-LG</x:String>
+                  <x:String>Grace-LG</x:String>
+                  <x:String>Helen-LG</x:String>
+                  <x:String>Henry-LG</x:String>
+                  <x:String>Jaxson-ST</x:String>
+                  <x:String>Liyon-LG</x:String>
+                  <x:String>Miller-LG</x:String>
+                  <x:String>Phebe-LG</x:String>
+                  <x:String>RichardVaughn-ST</x:String>
+                  <x:String>Rio-LG</x:String>
+                  <x:String>Stan-LG</x:String>
+                  <x:String>stacy</x:String>
+                  <x:String>vincer</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="cgvakstage.com" ContentHash="v1k_oXPXH0unzhJOtVFtmw" DesignTimeRectangle="690, 401, 157, 43" DesignTimeScaleFactor="1.125" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='form-select ng-untouched ng-pristine ng-valid' tag='SELECT' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8cfd4689-d97e-4636-9744-55169999d028" InformativeScreenshot="4f2dfdbcb366eb0fc2daf42340948557.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/EyI2HZHL4Ei3cJoaryRkTg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="563, 389, 124, 66" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Date ' aria-role='columnheader' tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Date ' aria-role='columnheader' type='' tag='TH' class='p-element p-sortable-column' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Date' /&gt;" Guid="9c39dc03-94a0-40bb-9b38-8013e1134058" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[finans]" DisplayName="Extract Table Data 'Extract Table Data(3)'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Sl.No' ReferenceIdx='0' Name='Sl.No'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-1' ReferenceIdx='1' Name='Column-1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Repair Count' ReferenceIdx='2' Name='Repair Count' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Select Repair Reason&amp;#xA;Additional DM details Needed&amp;#xA;DM Email needed&amp;#xA;Incorrect phone number&amp;#xA;Need additional phone number&amp;#xA;Website not opening' ReferenceIdx='3' Name='Select Repair Reason Additional DM details Needed DM Email needed Incorrect phone number Need additi'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Date' ReferenceIdx='4' Name='Date'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Select User&amp;#xA;Adam-LG&amp;#xA;Adrian-LG&amp;#xA;Andreaw-LG&amp;#xA;Austin-LG&amp;#xA;Cecilia-LG&amp;#xA;Gloria-LG&amp;#xA;Helen-LG&amp;#xA;Henry-LG&amp;#xA;Jaxson-ST&amp;#xA;Miller-LG&amp;#xA;NathanRS-ST&amp;#xA;Phebe-LG&amp;#xA;RichardVaughn-ST&amp;#xA;Rio-LG&amp;#xA;Stan-LG&amp;#xA;Titus-ST&amp;#xA;stacy&amp;#xA;vincer' ReferenceIdx='5' Name='Select User Adam-LG Adrian-LG Andreaw-LG Austin-LG Cecilia-LG Gloria-LG Helen-LG Henry-LG Jaxson-ST '&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Comment' ReferenceIdx='6' Name='Comment'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='MKT Category' ReferenceIdx='7' Name='MKT Category'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='VIP' ReferenceIdx='8' Name='VIP' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Select Size&amp;#xA;ExMedium: 26-50&amp;#xA;Large: 51-100&amp;#xA;Medium: 11-25&amp;#xA;Small: 1-10&amp;#xA;Very large: 100+' ReferenceIdx='9' Name='Select Size ExMedium: 26-50 Large: 51-100 Medium: 11-25 Small: 1-10 Very large: 100+'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='WL' ReferenceIdx='10' Name='WL' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Country' ReferenceIdx='11' Name='Country'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Status' ReferenceIdx='12' Name='Status'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Sl.No' attr='fulltext' /&gt;&lt;column name='Column-1' attr='fulltext' /&gt;&lt;column name='Repair Count' attr='fulltext' /&gt;&lt;column name='Select Repair Reason&amp;#xA;Additional DM details Needed&amp;#xA;DM Email needed&amp;#xA;Incorrect phone number&amp;#xA;Need additional phone number&amp;#xA;Website not opening' attr='fulltext' /&gt;&lt;column name='Date' attr='fulltext' /&gt;&lt;column name='Select User&amp;#xA;Adam-LG&amp;#xA;Adrian-LG&amp;#xA;Andreaw-LG&amp;#xA;Austin-LG&amp;#xA;Cecilia-LG&amp;#xA;Gloria-LG&amp;#xA;Helen-LG&amp;#xA;Henry-LG&amp;#xA;Jaxson-ST&amp;#xA;Miller-LG&amp;#xA;NathanRS-ST&amp;#xA;Phebe-LG&amp;#xA;RichardVaughn-ST&amp;#xA;Rio-LG&amp;#xA;Stan-LG&amp;#xA;Titus-ST&amp;#xA;stacy&amp;#xA;vincer' attr='fulltext' /&gt;&lt;column name='Comment' attr='fulltext' /&gt;&lt;column name='MKT Category' attr='fulltext' /&gt;&lt;column name='VIP' attr='fulltext' /&gt;&lt;column name='Select Size&amp;#xA;ExMedium: 26-50&amp;#xA;Large: 51-100&amp;#xA;Medium: 11-25&amp;#xA;Small: 1-10&amp;#xA;Very large: 100+' attr='fulltext' /&gt;&lt;column name='WL' attr='fulltext' /&gt;&lt;column name='Country' attr='fulltext' /&gt;&lt;column name='Status' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="417.6,182.4" sap2010:WorkflowViewState.IdRef="NExtractData_6" InteractionMode="DebuggerApi" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="74c4bb3d-2c44-4df7-93ed-4f02b84163c0" Version="V4">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="http://cgvakstage.com:8092/#/bde/repair-screen" ContentHash="Kso6M50O8UuxVPldWCfs6w" DesignTimeRectangle="23, 323, 1874, 46145" DesignTimeScaleFactor="1.125" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="2f53f725-a542-49ef-82b1-b96ff9126f27" InformativeScreenshot="1ab89914ab9c17d335d9ed1aed7dcb31.png" Reference="1f0TvZLH2E-RsUEpE_OEOA/mAuPFtOLQk-8oT4WurtmjQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="8bp5pS-YK0udW5kqZj21-w" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAKhSURBVEhLlZYxaFRBEIYPxZCYXO55dyQaYy4rayWrYimKKQQbixSCSJogVlZptLIIWGgZLKwsgoWVYhKwUZATUigWRgS1sIghYukZwUbwyR9ulrmZ3bfvBv7i7d2bj3s3//+mkud5payMdbPGumVjXWfPYP3f0OjBr9X65F35vSKpAylj3Slj3RIgxrqcVBnIvADfXzv0vtY4ckXeL6UOupBpY92isW6TQ2JArr1Djb/D2US71pw6K/v2AI11mbFuwVi3IZtLXZ27ls9cuKRgUvuGm39GDkw8y5pTLQ801s0b61Zk0yK9efsuX1l7rgBFGqyO/6jWDz8EUDUs0rnzF3Oq6WMnVOOkZMOUnjxd9cDlR491w5SMdW3ZNKaTp894GKrT+ZVnYy3dNKKBkbGffQGX7j/oAaIW79xTjWMiIDymmoe0s/Nb8vLNb1uqcUzwKoDwm2oudfPWbQ/Z3v6+C6Kav35DNQ8J/qS4UgApQKgAB4Rq48NH1TwkxCCAM7K5FIxOhceK4cGwYGioygTBaGNygWJMQbhgdCrYAmdoAFtQlQkCxB3FmoKQuNFRuCYgjM8rFQQ+S+WbgIsbHf8jHi9lKcSHpygI8EbhwKAXpdFTVRQE8CAHBsM7ZPRUxYIA4c2BQS9yo3/6/GV3eEjt1+tesAVVLAjgwUIgNzoKj5d/zpvJ4QkFgQQqL3KjkxViQAi2oAoFATwYBXKjo3CdAs5enuu5RwaBBGK98M1evHzlb8QvlbAQEOIWkUFAawbfaZK7TAoYE3Yb4nhgF4r9Jrqp9QvEBoc9hjN6gOzxYmqj6ZMCIlUwlXxbiwIFGFu2ghUBsY2HQEkgA+NtoqJPghBdseW3LyCpax0/WATCQNDIl5E6SAmD1Tp6fCs0EGX0H5z6d754KdW5AAAAAElFTkSuQmCC" InformativeScreenshot="a3eb4f53dfff31d02ab6687ff6cb8d4e.jpg" Reference="1f0TvZLH2E-RsUEpE_OEOA/Ndnaov1E9k-BFa8v7AULwg" Selector="&lt;html app='chrome.exe' url='http://cgvakstage.com:8092/#/auth' /&gt;" Url="http://cgvakstage.com:8092/#/auth" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:OutputDataTable DataTable="[finans]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="568,112.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[texttable]" />
+    <ui:MessageBox Caption="{x:Null}" AutoCloseAfter="00:00:00" ChosenButton="[text]" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="568,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[texttable]" />
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="568,893.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="534.4,784" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="500.8,724" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" KeepExcelFileOpen="True" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="Book1.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,391.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ClearRangeX DisplayName="Clear Sheet/Range/Table" HasHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,148" sap2010:WorkflowViewState.IdRef="ClearRangeX_1" TargetRange="[Excel.Sheet(&quot;Sheet1&quot;)]" />
+                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Sheet1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="433.6,183.2" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[finans]" />
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
