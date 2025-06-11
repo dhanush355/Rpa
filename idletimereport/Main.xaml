@@ -1,0 +1,1707 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="834.8000000000001,4096" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd2:DataTable" Name="dt" />
+      <Variable x:TypeArguments="x:String" Name="str" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BuildDataTable DataTable="[dt]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="603.2,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;IdleMinutes&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <Sequence sap:VirtualizedContainerService.HintSize="603.2,3087.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard CloseMode="Always" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="569.6,56.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="3a95eac5-c94f-43ef-a7d0-1dbeee64c82f">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="483.2,888" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NSelectItem DisplayName="Select Item ''DB*''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Products" ScopeIdentifier="3a95eac5-c94f-43ef-a7d0-1dbeee64c82f" Version="V4">
+                <uix:NSelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="3">
+                    <x:String>Select Database</x:String>
+                    <x:String>Software</x:String>
+                    <x:String>Products</x:String>
+                  </scg:List>
+                </uix:NSelectItem.Items>
+                <uix:NSelectItem.Target>
+                  <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" ContentHash="lQgjQKv930G6xn92lOde_A" CvElementArea="1020, 445, 397, 62" CvType="InputBox" DesignTimeRectangle="1021, 447, 396, 59" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='form-select ng-untouched ng-pristine ng-invalid' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="0bb790fa-c607-4dd7-90ff-8fd402934168" InformativeScreenshot="c4518afaef144a8fa563f56536fa3489.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/Qa7iL98-Gky8XDgE8dUOSQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" CvTextArea="1020, 410, 37, 17" CvTextArgument="DB*" CvType="Text" DesignTimeRectangle="1021, 404, 37, 33" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='DB' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='DB*' /&gt;" Guid="e2bae905-ae2f-48ac-9e8e-fd105bcdb896" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NSelectItem.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NSelectItem>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into ''Username*''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="3a95eac5-c94f-43ef-a7d0-1dbeee64c82f" Text="antonio" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" ContentHash="m3EGqCTgl02_2barPerFPg" CvElementArea="1020, 556, 398, 63" CvType="InputBox" DesignTimeRectangle="1021, 558, 396, 61" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='input ng-untouched ng-pristine ng-invalid' placeholder='Please Enter Username' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="bb1c02d6-21d8-49b2-99c9-ab4772898caa" InformativeScreenshot="9a511af78ef9d756c6d55dbc6fd19d56.png" IsResponsive="True" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/p3F_kW8JukSBpLiejGHghw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" CvTextArea="1020, 521, 113, 18" CvTextArgument="Username*" CvType="Text" DesignTimeRectangle="1021, 516, 115, 32" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Username' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Username' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Username*' /&gt;" Guid="67b5f9a9-0686-432b-8001-b492dc43db7b" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into ''Password*''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="3a95eac5-c94f-43ef-a7d0-1dbeee64c82f" Text="CG009" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" ContentHash="21P8zAOKZkS66KCFzm3rkg" CvElementArea="1020, 670, 398, 63" CvType="InputBox" DesignTimeRectangle="1021, 672, 396, 61" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='input ng-untouched ng-pristine ng-invalid' placeholder='Please Enter Password' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="4399409f-e91b-4a56-8e59-6a07aa92dac7" InformativeScreenshot="65803ab04459f8c2fd367a480bde1186.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/N6kP8FsV5E26qo_crdz-Rw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" CvTextArea="1020, 634, 106, 20" CvTextArgument="Password*" CvType="Text" DesignTimeRectangle="1021, 629, 108, 33" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Password*' /&gt;" Guid="d7ba7dc6-4f51-4166-a88d-1480c5ed4feb" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click ''Login''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3a95eac5-c94f-43ef-a7d0-1dbeee64c82f" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" ContentHash="tW-ibW5zREq6Os2y7xfcug" CvElementArea="1152, 827, 131, 67" CvTextArea="1190, 850, 55, 23" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="1156, 830, 125, 62" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='input' aaname='Login' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Login' /&gt;" Guid="ccbb8762-7fb5-41be-8bff-0b4c516ad8da" InformativeScreenshot="55cc1bb8f4a582a08eb86c06180365a0.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/zobs9K60c0qFlAJXJ76aoA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <Sequence sap:VirtualizedContainerService.HintSize="449.6,599.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="sd2:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Reports''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3a95eac5-c94f-43ef-a7d0-1dbeee64c82f" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="9d9802d4-c9c3-443d-8cb2-1cb1c693fe94" ContentHash="gArujGFTi0WC5bUMF84JQg" CvElementArea="746, 248, 24, 23" CvTextArea="671, 252, 71, 21" CvTextArgument="Reports" CvType="ArrowButton" DesignTimeRectangle="662, 236, 112, 53" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Reports ' id='navbarDropdown' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Reports ' id='navbarDropdown' tag='A' type='' class='nav-link dropdown-toggle' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Reports' /&gt;" Guid="eb220b0f-c99f-4d03-8ae5-62b627d52650" InformativeScreenshot="ef45f65e2c30093dac1f8bf8589df5e6.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/jZ-JsQ9Qv0WhoPV71CowLg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="9d9802d4-c9c3-443d-8cb2-1cb1c693fe94" CvTextArea="671, 252, 71, 21" CvTextArgument="Reports" CvType="Text" DesignTimeRectangle="671, 252, 71, 22" ElementType="Text" Guid="7a2f520d-df37-4084-9108-b5e0b728db8a" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Reports''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3a95eac5-c94f-43ef-a7d0-1dbeee64c82f" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="cgvaklive.com" ContentHash="2uuaN9eC-0CxwZuS_8wPkQ" DesignTimeRectangle="663, 302, 198, 42" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='reports' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='reports' tag='A' type='' class='dropdown-item' aaname='Reports' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Reports' /&gt;" Guid="0da42972-a90c-4657-8760-7fa9e69139ec" InformativeScreenshot="eecb61cd06c56ac8e6323abc94ae1c90.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/yOTcYIOED0OHFaH-X3zyuw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Idle Time Report''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3a95eac5-c94f-43ef-a7d0-1dbeee64c82f" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="4b3cea22-7165-4631-975d-9713ac3eff9a" ContentHash="NutBBDC3sEGUFRgNqc53Dw" CvTextArea="50, 502, 138, 21" CvTextArgument="Idle Time Report" CvType="Text" DesignTimeRectangle="30, 486, 179, 58" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='nav-home-tab29' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nav-home-tab29' tag='BUTTON' type='button' class='nav-link' aaname='Idle Time Report' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Idle Time Report' /&gt;" Guid="a461d5e1-6212-4aa2-885d-681c961835fc" InformativeScreenshot="2f62113988972f7cde87b0f638e94956.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/s2P2pV4VHkK6h_Q0jWxoxQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="4b3cea22-7165-4631-975d-9713ac3eff9a" CvTextArea="50, 502, 138, 21" CvTextArgument="Idle Time Report" CvType="Text" DesignTimeRectangle="50, 502, 138, 21" ElementType="Text" Guid="a52786d2-f870-4b06-a56a-7c9ccf261334" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="96b555bd-d7fc-48af-8973-39bf9477ddfc" DisplayName="CV Screen Scope 'INPUT  mfromdate'" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+                  <p:CVScope.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Icon (125,4,20,21)&quot;]" DesignTimeCacheId="96b555bd-d7fc-48af-8973-39bf9477ddfc" DesignTimeScaleFactor="1.25" DisplayName="CV Click - 'Icon'" sap:VirtualizedContainerService.HintSize="400,218.4" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_1" InformativeScreenshot="6f4b935ee427dac164746d3a9d1fbd46" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
+                          <p:CvClickWithDescriptor.CursorPosition>
+                            <ui:CursorPosition Position="Center">
+                              <ui:CursorPosition.OffsetX>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetX>
+                              <ui:CursorPosition.OffsetY>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetY>
+                            </ui:CursorPosition>
+                          </p:CvClickWithDescriptor.CursorPosition>
+                          <p:CvClickWithDescriptor.DesignTimeDescriptor>
+                            <uc:CvDescriptor Id="556d5e86-638d-477a-af71-8135890b546e">
+                              <uc:CvDescriptor.Target>
+                                <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="125, 4, 20, 21" ElementType="Icon" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABkAAAAaCAYAAABCfffNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADDSURBVEhL7ZUxDoQgEEUpLU3Qo1h7CAyhsTDhYJzA1hLvoCbcgwPMZky2AVmB7G4s+Mlvhnl5IRQQ+EOIO/hFiiQpUZKmaaBtW3d8mavdjxJrLazrCnVdn9Va3/a9ixzymKBknmeoqgoIIdlFflmWsEQI4UE5HccxLGGMeUBOh2F4iEQp5T1uTJFDnnN+LzmOwz2Kyr7v8TcpkiJJSpEk5TmSaZrOpa7roO/75CKHvJQyLNm2DSil52Ju8Rs2xoQl38wLZ0I5He/7H4oAAAAASUVORK5CYII=" />
+                              </uc:CvDescriptor.Target>
+                            </uc:CvDescriptor>
+                          </p:CvClickWithDescriptor.DesignTimeDescriptor>
+                          <p:CvClickWithDescriptor.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="5369661e-70f6-4ed1-9f02-792eb527e726">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </p:CvClickWithDescriptor.Target>
+                        </p:CvClickWithDescriptor>
+                        <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="400,113.6" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                      </Sequence>
+                    </ActivityAction>
+                  </p:CVScope.Body>
+                  <p:CVScope.DesignTimeCache>
+                    <uc:CVCache CvUiElements="{x:Null}" OcrTexts="{x:Null}" DataSent="False" />
+                  </p:CVScope.DesignTimeCache>
+                  <p:CVScope.DesignTimeCacheContainer>
+                    <uc:CvCacheContainer>
+                      <uc:CvCacheContainer.Caches>
+                        <scg:List x:TypeArguments="uc:CVCache" Capacity="1">
+                          <uc:CVCache DataSent="False" DisplayName="Screen CV Click - Icon (Main)" Id="96b555bd-d7fc-48af-8973-39bf9477ddfc" InformativeScreenshot="84464923b3550ff35377461ad65c24af" LogicalPosition="92, 626" OcrText="" Position="92, 626" ScaleFactor="1.25" ScreenshotGuid="6fcc1a7f-6b95-4311-b174-4c6895429a48" ServerVersion="24.10.5.1">
+                            <uc:CVCache.CvAnchorRelations>
+                              <scg:List x:TypeArguments="uc:AnchorRelationInfo" Capacity="0" />
+                            </uc:CVCache.CvAnchorRelations>
+                            <uc:CVCache.CvUiElements>
+                              <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="4">
+                                <uc:CvElementInfo Category="InputBox" Description="Inputbox" Region="0, 0, 148, 34" />
+                                <uc:CvElementInfo Category="Icon" Description="Icon" Region="125, 4, 20, 21" />
+                              </scg:List>
+                            </uc:CVCache.CvUiElements>
+                            <uc:CVCache.OcrTexts>
+                              <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="0" />
+                            </uc:CVCache.OcrTexts>
+                          </uc:CVCache>
+                        </scg:List>
+                      </uc:CvCacheContainer.Caches>
+                    </uc:CvCacheContainer>
+                  </p:CVScope.DesignTimeCacheContainer>
+                  <p:CVScope.OCREngine>
+                    <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                      <ActivityFunc.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                      </ActivityFunc.Argument>
+                      <p1:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseAccents="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="400,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Image="[Image]" Language="en" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                    </ActivityFunc>
+                  </p:CVScope.OCREngine>
+                  <p:CVScope.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="86f7526d-b431-4f5f-b625-0f0412397e79" InformativeScreenshot="f1a1909fa5d60904be7e3e64f516ca00" Selector="&lt;webctrl id='mfromdate' tag='INPUT' /&gt;" WaitForReady="INTERACTIVE">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                    </ui:Target>
+                  </p:CVScope.Target>
+                  <p:CVScope.UseLocalServer>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </p:CVScope.UseLocalServer>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </p:CVScope>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Get Report''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3a95eac5-c94f-43ef-a7d0-1dbeee64c82f" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="e0e13715-7bd1-4588-9ad6-5fd77b212078" ContentHash="JY6C-rD10UaAfzpb6AvoVA" CvElementArea="324, 628, 150, 55" CvTextArea="350, 647, 97, 21" CvTextArgument="Get Report" CvType="Button" DesignTimeRectangle="327, 632, 145, 50" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='nav-home29' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='nav-home29' tag='BUTTON' type='button' class='btn btn-primary' aaname='Get Report' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Get Report' /&gt;" Guid="6dd98399-789e-42e5-9f29-7691e0748b17" InformativeScreenshot="6b7e015bd7db694bf17d80ce3014565c.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/dN4pAJek2kmRYFx3Ka4dMw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DelayAfter="3" DelayBefore="3" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='SI.No' ReferenceIdx='0' Name='SI.No'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='BDE Name' ReferenceIdx='1' Name='BDE Name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Gap B/W Calls More than 15 Mins' ReferenceIdx='2' Name='Gap B/W Calls More than 15 Mins'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='SI.No' attr='fulltext' /&gt;&lt;column name='BDE Name' attr='fulltext' /&gt;&lt;column name='Gap B/W Calls More than 15 Mins' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="3a95eac5-c94f-43ef-a7d0-1dbeee64c82f" Version="V4">
+                  <uix:NExtractData.Target>
+                    <uix:TargetAnchorable BrowserURL="https://cgvaklive.com/#/bde/reports" ContentHash="tHmY4W8G9EGOHZJNygFI4Q" DesignTimeRectangle="44, 464, 1831, 538" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='nav-home29' tag='TABLE' /&gt;" Guid="9e23763a-bc70-46fc-8253-7606ce56833c" InformativeScreenshot="afd5a763857e4233ad45cc32269b0b55.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/lQSIlULgd0O9rhLWRfhxzQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
+                  </uix:NExtractData.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NExtractData>
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="416,49.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                  <ui:ForEachRow.Body>
+                    <ActivityAction x:TypeArguments="sd2:DataRow">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentRow" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,448.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="Name" />
+                          <Variable x:TypeArguments="x:String" Name="Calls" />
+                          <Variable x:TypeArguments="sd2:DataTable" Name="Tabledata" />
+                          <Variable x:TypeArguments="x:String" Name="Sum" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_3">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Name]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[CurrentRow(1).ToString]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_4">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Calls]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[CurrentRow(2).ToString]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label(4)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3a95eac5-c94f-43ef-a7d0-1dbeee64c82f" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="597e503e-d40d-464d-9b27-c80422591f2d" ContentHash="1Y9kue5M0ki5OxrA93y75Q" DesignTimeRectangle="880, 741, 995, 38" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl parentid='nav-home29' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='TABLE' /&gt;&lt;webctrl type='' class='text-center' matching:class='fuzzy' fuzzylevel:class='0.0' tag='TD' aaname='{0}' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' colName='Gap B/W Calls More than 15 Mins' innertext='{0}' /&gt;&quot;, Calls)]" Guid="cd1eaa38-1320-4286-91d3-e999f4ba6aa5" InformativeScreenshot="64a94f212485decb22a5113ab672fb2e.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/_K--9iSp4kqbueDxIR1wQg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="597e503e-d40d-464d-9b27-c80422591f2d" CvTextArea="536, 746, 97, 22" CvTextArgument="Phebe-LG" CvType="Text" DesignTimeRectangle="291, 741, 589, 38" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl parentid='nav-home29' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='TABLE' /&gt;&lt;webctrl type='' class='text-center' matching:class='fuzzy' fuzzylevel:class='0.0' tag='TD' aaname='{0}' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' colName='BDE Name' innertext='{0}' /&gt;&quot;, Name)]" Guid="89536d07-9c3b-4824-b712-2d29326fa823" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Tabledata]" DisplayName="Extract Table Data 'Extract Table Data(1)'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='SI No' ReferenceIdx='0' Name='SI No'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Previous Call Time' ReferenceIdx='1' Name='Previous Call Time'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Next Call Time' ReferenceIdx='2' Name='Next Call Time'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Time Difference in Mins.' ReferenceIdx='3' Name='Time Difference in Mins.'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='SI No' attr='fulltext' /&gt;&lt;column name='Previous Call Time' attr='fulltext' /&gt;&lt;column name='Next Call Time' attr='fulltext' /&gt;&lt;column name='Time Difference in Mins.' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="3a95eac5-c94f-43ef-a7d0-1dbeee64c82f" Version="V4">
+                          <uix:NExtractData.Target>
+                            <uix:TargetAnchorable BrowserURL="https://cgvaklive.com/#/bde/reports" ContentHash="_RfXxN4xe0iS4MZMBckquQ" DesignTimeRectangle="212, 420, 1496, 412" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl aria-role='table' parentid='pr_id_69' tag='TABLE' /&gt;" Guid="61eea74f-47b9-454a-b270-465a5b69d9f5" InformativeScreenshot="12ed159ef770fad758f87ca999e96763.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/JwpnhbdUfEOVeHEs__otMA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
+                          </uix:NExtractData.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NExtractData>
+                        <Assign sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_5">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Sum]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[TableData.AsEnumerable().Sum(Function(row) CSng(row("Time Difference in Mins."))).ToString()]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {Name, Sum}]" DataTable="[dt]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:AddDataRow>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3a95eac5-c94f-43ef-a7d0-1dbeee64c82f" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="341c3fe4-5451-4c2a-a63c-c918aebb2bb6" ContentHash="tS7ASpyKAkG6X9LQ0egpdQ" CvElementArea="1661, 395, 30, 29" CvType="CloseButton" DesignTimeRectangle="1658, 391, 40, 40" ElementType="Button" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-layout&amp;gt;div&amp;gt;app-reports&amp;gt;p-dialog&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button' tabindex='-1' tag='BUTTON' type='button' /&gt;" Guid="6963cf1b-6bf1-4a35-8e38-e79de0ef17a4" InformativeScreenshot="dddcadcea002efa9e21151dfbbb8e487.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/QDbRknIXNE-sMWP_fVYQEg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="341c3fe4-5451-4c2a-a63c-c918aebb2bb6" CvElementArea="1661, 395, 30, 29" CvType="CloseButton" DesignTimeRectangle="1668, 401, 20, 20" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-layout&amp;gt;div&amp;gt;app-reports&amp;gt;p-dialog&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span' isleaf='1' tag='SPAN' /&gt;" Guid="bdc6e552-0c5d-4d1d-942c-e972b010d1c0" SearchSteps="Selector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEachRow.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:ForEachRow>
+              </Sequence>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="ayfNTPmskkq9Khvndg2HlQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAKhSURBVEhLlZYxaFRBEIYPxZCYXO55dyQaYy4rayWrYimKKQQbixSCSJogVlZptLIIWGgZLKwsgoWVYhKwUZATUigWRgS1sIghYukZwUbwyR9ulrmZ3bfvBv7i7d2bj3s3//+mkud5payMdbPGumVjXWfPYP3f0OjBr9X65F35vSKpAylj3Slj3RIgxrqcVBnIvADfXzv0vtY4ckXeL6UOupBpY92isW6TQ2JArr1Djb/D2US71pw6K/v2AI11mbFuwVi3IZtLXZ27ls9cuKRgUvuGm39GDkw8y5pTLQ801s0b61Zk0yK9efsuX1l7rgBFGqyO/6jWDz8EUDUs0rnzF3Oq6WMnVOOkZMOUnjxd9cDlR491w5SMdW3ZNKaTp894GKrT+ZVnYy3dNKKBkbGffQGX7j/oAaIW79xTjWMiIDymmoe0s/Nb8vLNb1uqcUzwKoDwm2oudfPWbQ/Z3v6+C6Kav35DNQ8J/qS4UgApQKgAB4Rq48NH1TwkxCCAM7K5FIxOhceK4cGwYGioygTBaGNygWJMQbhgdCrYAmdoAFtQlQkCxB3FmoKQuNFRuCYgjM8rFQQ+S+WbgIsbHf8jHi9lKcSHpygI8EbhwKAXpdFTVRQE8CAHBsM7ZPRUxYIA4c2BQS9yo3/6/GV3eEjt1+tesAVVLAjgwUIgNzoKj5d/zpvJ4QkFgQQqL3KjkxViQAi2oAoFATwYBXKjo3CdAs5enuu5RwaBBGK98M1evHzlb8QvlbAQEOIWkUFAawbfaZK7TAoYE3Yb4nhgF4r9Jrqp9QvEBoc9hjN6gOzxYmqj6ZMCIlUwlXxbiwIFGFu2ghUBsY2HQEkgA+NtoqJPghBdseW3LyCpax0/WATCQNDIl5E6SAmD1Tp6fCs0EGX0H5z6d754KdW5AAAAAElFTkSuQmCC" InformativeScreenshot="31e5d5497896ffeb497afd5686b001cd.jpg" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/lbP_j26gSUqG2Yqxv9DGkw" Selector="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" Url="https://cgvaklive.com/#/auth" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome SMSWebUi" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="569.6,56.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="4a9c73d4-38b9-47ae-a6db-f2bca44816bc" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="536,1989.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NSelectItem DisplayName="Select Item 'DB*'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502.4,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="Software" ScopeIdentifier="4a9c73d4-38b9-47ae-a6db-f2bca44816bc" Version="V4">
+                <uix:NSelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="3">
+                    <x:String>Select Database</x:String>
+                    <x:String>Software</x:String>
+                    <x:String>Products</x:String>
+                  </scg:List>
+                </uix:NSelectItem.Items>
+                <uix:NSelectItem.Target>
+                  <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" ContentHash="lQgjQKv930G6xn92lOde_A" CvElementArea="1020, 445, 397, 62" CvType="InputBox" DesignTimeRectangle="1021, 447, 396, 59" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='form-select ng-untouched ng-pristine ng-invalid' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="0bb790fa-c607-4dd7-90ff-8fd402934168" InformativeScreenshot="c4518afaef144a8fa563f56536fa3489.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/Qa7iL98-Gky8XDgE8dUOSQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" CvTextArea="1020, 410, 37, 17" CvTextArgument="DB*" CvType="Text" DesignTimeRectangle="1021, 404, 37, 33" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='DB' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='DB*' /&gt;" Guid="e2bae905-ae2f-48ac-9e8e-fd105bcdb896" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NSelectItem.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NSelectItem>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Username*'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502.4,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="4a9c73d4-38b9-47ae-a6db-f2bca44816bc" Text="antonio" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" ContentHash="m3EGqCTgl02_2barPerFPg" CvElementArea="1020, 556, 398, 63" CvType="InputBox" DesignTimeRectangle="1021, 558, 396, 61" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='input ng-untouched ng-pristine ng-invalid' placeholder='Please Enter Username' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="bb1c02d6-21d8-49b2-99c9-ab4772898caa" InformativeScreenshot="9a511af78ef9d756c6d55dbc6fd19d56.png" IsResponsive="True" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/p3F_kW8JukSBpLiejGHghw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" CvTextArea="1020, 521, 113, 18" CvTextArgument="Username*" CvType="Text" DesignTimeRectangle="1021, 516, 115, 32" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Username' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Username' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Username*' /&gt;" Guid="67b5f9a9-0686-432b-8001-b492dc43db7b" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Password*'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502.4,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_4" IsPassword="True" ScopeIdentifier="4a9c73d4-38b9-47ae-a6db-f2bca44816bc" Text="CG009" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" ContentHash="21P8zAOKZkS66KCFzm3rkg" CvElementArea="1020, 670, 398, 63" CvType="InputBox" DesignTimeRectangle="1021, 672, 396, 61" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='input ng-untouched ng-pristine ng-invalid' placeholder='Please Enter Password' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="4399409f-e91b-4a56-8e59-6a07aa92dac7" InformativeScreenshot="65803ab04459f8c2fd367a480bde1186.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/N6kP8FsV5E26qo_crdz-Rw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" CvTextArea="1020, 634, 106, 20" CvTextArgument="Password*" CvType="Text" DesignTimeRectangle="1021, 629, 108, 33" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Password*' /&gt;" Guid="d7ba7dc6-4f51-4166-a88d-1480c5ed4feb" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502.4,56.8" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4a9c73d4-38b9-47ae-a6db-f2bca44816bc" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" ContentHash="tW-ibW5zREq6Os2y7xfcug" CvElementArea="1152, 827, 131, 67" CvTextArea="1190, 850, 55, 23" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="1156, 830, 125, 62" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='input' aaname='Login' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Login' /&gt;" Guid="ccbb8762-7fb5-41be-8bff-0b4c516ad8da" InformativeScreenshot="55cc1bb8f4a582a08eb86c06180365a0.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/zobs9K60c0qFlAJXJ76aoA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <Sequence sap:VirtualizedContainerService.HintSize="502.4,1569.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="sd2:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Reports''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="468.8,56.8" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4a9c73d4-38b9-47ae-a6db-f2bca44816bc" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="9d9802d4-c9c3-443d-8cb2-1cb1c693fe94" ContentHash="gArujGFTi0WC5bUMF84JQg" CvElementArea="746, 248, 24, 23" CvTextArea="671, 252, 71, 21" CvTextArgument="Reports" CvType="ArrowButton" DesignTimeRectangle="662, 236, 112, 53" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Reports ' id='navbarDropdown' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Reports ' id='navbarDropdown' tag='A' type='' class='nav-link dropdown-toggle' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Reports' /&gt;" Guid="eb220b0f-c99f-4d03-8ae5-62b627d52650" InformativeScreenshot="ef45f65e2c30093dac1f8bf8589df5e6.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/jZ-JsQ9Qv0WhoPV71CowLg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="9d9802d4-c9c3-443d-8cb2-1cb1c693fe94" CvTextArea="671, 252, 71, 21" CvTextArgument="Reports" CvType="Text" DesignTimeRectangle="671, 252, 71, 22" ElementType="Text" Guid="7a2f520d-df37-4084-9108-b5e0b728db8a" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Reports''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="468.8,56.8" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4a9c73d4-38b9-47ae-a6db-f2bca44816bc" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="cgvaklive.com" ContentHash="2uuaN9eC-0CxwZuS_8wPkQ" DesignTimeRectangle="663, 302, 198, 42" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='reports' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='reports' tag='A' type='' class='dropdown-item' aaname='Reports' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Reports' /&gt;" Guid="0da42972-a90c-4657-8760-7fa9e69139ec" InformativeScreenshot="eecb61cd06c56ac8e6323abc94ae1c90.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/yOTcYIOED0OHFaH-X3zyuw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Idle Time Report''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="468.8,56.8" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4a9c73d4-38b9-47ae-a6db-f2bca44816bc" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="4b3cea22-7165-4631-975d-9713ac3eff9a" ContentHash="NutBBDC3sEGUFRgNqc53Dw" CvTextArea="50, 502, 138, 21" CvTextArgument="Idle Time Report" CvType="Text" DesignTimeRectangle="30, 486, 179, 58" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='nav-home-tab29' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nav-home-tab29' tag='BUTTON' type='button' class='nav-link' aaname='Idle Time Report' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Idle Time Report' /&gt;" Guid="a461d5e1-6212-4aa2-885d-681c961835fc" InformativeScreenshot="2f62113988972f7cde87b0f638e94956.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/s2P2pV4VHkK6h_Q0jWxoxQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="4b3cea22-7165-4631-975d-9713ac3eff9a" CvTextArea="50, 502, 138, 21" CvTextArgument="Idle Time Report" CvType="Text" DesignTimeRectangle="50, 502, 138, 21" ElementType="Text" Guid="a52786d2-f870-4b06-a56a-7c9ccf261334" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="96b555bd-d7fc-48af-8973-39bf9477ddfc" DisplayName="CV Screen Scope 'INPUT  mfromdate'" sap:VirtualizedContainerService.HintSize="468.8,56.8" sap2010:WorkflowViewState.IdRef="CVScope_2" SendOnPremData="False" Version="V6">
+                  <p:CVScope.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                        <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Icon (125,4,20,21)&quot;]" DesignTimeCacheId="96b555bd-d7fc-48af-8973-39bf9477ddfc" DesignTimeScaleFactor="1.25" DisplayName="CV Click - 'Icon'" sap:VirtualizedContainerService.HintSize="400,218.4" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_2" InformativeScreenshot="6f4b935ee427dac164746d3a9d1fbd46" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
+                          <p:CvClickWithDescriptor.CursorPosition>
+                            <ui:CursorPosition Position="Center">
+                              <ui:CursorPosition.OffsetX>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetX>
+                              <ui:CursorPosition.OffsetY>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetY>
+                            </ui:CursorPosition>
+                          </p:CvClickWithDescriptor.CursorPosition>
+                          <p:CvClickWithDescriptor.DesignTimeDescriptor>
+                            <uc:CvDescriptor Id="556d5e86-638d-477a-af71-8135890b546e">
+                              <uc:CvDescriptor.Target>
+                                <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="125, 4, 20, 21" ElementType="Icon" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABkAAAAaCAYAAABCfffNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADDSURBVEhL7ZUxDoQgEEUpLU3Qo1h7CAyhsTDhYJzA1hLvoCbcgwPMZky2AVmB7G4s+Mlvhnl5IRQQ+EOIO/hFiiQpUZKmaaBtW3d8mavdjxJrLazrCnVdn9Va3/a9ixzymKBknmeoqgoIIdlFflmWsEQI4UE5HccxLGGMeUBOh2F4iEQp5T1uTJFDnnN+LzmOwz2Kyr7v8TcpkiJJSpEk5TmSaZrOpa7roO/75CKHvJQyLNm2DSil52Ju8Rs2xoQl38wLZ0I5He/7H4oAAAAASUVORK5CYII=" />
+                              </uc:CvDescriptor.Target>
+                            </uc:CvDescriptor>
+                          </p:CvClickWithDescriptor.DesignTimeDescriptor>
+                          <p:CvClickWithDescriptor.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="5369661e-70f6-4ed1-9f02-792eb527e726">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </p:CvClickWithDescriptor.Target>
+                        </p:CvClickWithDescriptor>
+                        <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="400,113.6" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                      </Sequence>
+                    </ActivityAction>
+                  </p:CVScope.Body>
+                  <p:CVScope.DesignTimeCache>
+                    <uc:CVCache CvUiElements="{x:Null}" OcrTexts="{x:Null}" DataSent="False" />
+                  </p:CVScope.DesignTimeCache>
+                  <p:CVScope.DesignTimeCacheContainer>
+                    <uc:CvCacheContainer>
+                      <uc:CvCacheContainer.Caches>
+                        <scg:List x:TypeArguments="uc:CVCache" Capacity="1">
+                          <uc:CVCache DataSent="False" DisplayName="Screen CV Click - Icon (Main)" Id="96b555bd-d7fc-48af-8973-39bf9477ddfc" InformativeScreenshot="84464923b3550ff35377461ad65c24af" LogicalPosition="92, 626" OcrText="" Position="92, 626" ScaleFactor="1.25" ScreenshotGuid="6fcc1a7f-6b95-4311-b174-4c6895429a48" ServerVersion="24.10.5.1">
+                            <uc:CVCache.CvAnchorRelations>
+                              <scg:List x:TypeArguments="uc:AnchorRelationInfo" Capacity="0" />
+                            </uc:CVCache.CvAnchorRelations>
+                            <uc:CVCache.CvUiElements>
+                              <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="4">
+                                <uc:CvElementInfo Category="InputBox" Description="Inputbox" Region="0, 0, 148, 34" />
+                                <uc:CvElementInfo Category="Icon" Description="Icon" Region="125, 4, 20, 21" />
+                              </scg:List>
+                            </uc:CVCache.CvUiElements>
+                            <uc:CVCache.OcrTexts>
+                              <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="0" />
+                            </uc:CVCache.OcrTexts>
+                          </uc:CVCache>
+                        </scg:List>
+                      </uc:CvCacheContainer.Caches>
+                    </uc:CvCacheContainer>
+                  </p:CVScope.DesignTimeCacheContainer>
+                  <p:CVScope.OCREngine>
+                    <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                      <ActivityFunc.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                      </ActivityFunc.Argument>
+                      <p1:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseAccents="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="400,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_2" Image="[Image]" Language="en" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                    </ActivityFunc>
+                  </p:CVScope.OCREngine>
+                  <p:CVScope.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="86f7526d-b431-4f5f-b625-0f0412397e79" InformativeScreenshot="f1a1909fa5d60904be7e3e64f516ca00" Selector="&lt;webctrl id='mfromdate' tag='INPUT' /&gt;" WaitForReady="INTERACTIVE">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                    </ui:Target>
+                  </p:CVScope.Target>
+                  <p:CVScope.UseLocalServer>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </p:CVScope.UseLocalServer>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </p:CVScope>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="7" DisplayName="Click ''Get Report''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="468.8,56.8" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4a9c73d4-38b9-47ae-a6db-f2bca44816bc" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="e0e13715-7bd1-4588-9ad6-5fd77b212078" ContentHash="JY6C-rD10UaAfzpb6AvoVA" CvElementArea="324, 628, 150, 55" CvTextArea="350, 647, 97, 21" CvTextArgument="Get Report" CvType="Button" DesignTimeRectangle="327, 632, 145, 50" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='nav-home29' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='nav-home29' tag='BUTTON' type='button' class='btn btn-primary' aaname='Get Report' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Get Report' /&gt;" Guid="6dd98399-789e-42e5-9f29-7691e0748b17" InformativeScreenshot="6b7e015bd7db694bf17d80ce3014565c.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/dN4pAJek2kmRYFx3Ka4dMw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="468.8,122.4" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DelayAfter="3" DelayBefore="6" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='SI.No' ReferenceIdx='0' Name='SI.No'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='BDE Name' ReferenceIdx='1' Name='BDE Name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Gap B/W Calls More than 15 Mins' ReferenceIdx='2' Name='Gap B/W Calls More than 15 Mins'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='SI.No' attr='fulltext' /&gt;&lt;column name='BDE Name' attr='fulltext' /&gt;&lt;column name='Gap B/W Calls More than 15 Mins' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="468.8,56.8" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="4a9c73d4-38b9-47ae-a6db-f2bca44816bc" Version="V4">
+                  <uix:NExtractData.Target>
+                    <uix:TargetAnchorable BrowserURL="https://cgvaklive.com/#/bde/reports" ContentHash="tHmY4W8G9EGOHZJNygFI4Q" DesignTimeRectangle="44, 464, 1831, 538" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='nav-home29' tag='TABLE' /&gt;" Guid="9e23763a-bc70-46fc-8253-7606ce56833c" InformativeScreenshot="afd5a763857e4233ad45cc32269b0b55.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/lQSIlULgd0O9rhLWRfhxzQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
+                  </uix:NExtractData.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NExtractData>
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="468.8,1004" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                  <ui:ForEachRow.Body>
+                    <ActivityAction x:TypeArguments="sd2:DataRow">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentRow" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="467.2,801.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="Name" />
+                          <Variable x:TypeArguments="x:String" Name="Calls" />
+                          <Variable x:TypeArguments="sd2:DataTable" Name="Tabledata" />
+                          <Variable x:TypeArguments="x:String" Name="Sum" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="Assign_6">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Name]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[CurrentRow(1).ToString]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="Assign_7">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Calls]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[CurrentRow(2).ToString]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label(4)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4a9c73d4-38b9-47ae-a6db-f2bca44816bc" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="597e503e-d40d-464d-9b27-c80422591f2d" ContentHash="1Y9kue5M0ki5OxrA93y75Q" DesignTimeRectangle="880, 741, 995, 38" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl parentid='nav-home29' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='TABLE' /&gt;&lt;webctrl type='' class='text-center' matching:class='fuzzy' fuzzylevel:class='0.0' tag='TD' aaname='{0}' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' colName='Gap B/W Calls More than 15 Mins' innertext='{0}' /&gt;&quot;, Calls)]" Guid="cd1eaa38-1320-4286-91d3-e999f4ba6aa5" InformativeScreenshot="64a94f212485decb22a5113ab672fb2e.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/_K--9iSp4kqbueDxIR1wQg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="597e503e-d40d-464d-9b27-c80422591f2d" CvTextArea="536, 746, 97, 22" CvTextArgument="Phebe-LG" CvType="Text" DesignTimeRectangle="291, 741, 589, 38" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl parentid='nav-home29' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='TABLE' /&gt;&lt;webctrl type='' class='text-center' matching:class='fuzzy' fuzzylevel:class='0.0' tag='TD' aaname='{0}' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' colName='BDE Name' innertext='{0}' /&gt;&quot;, Name)]" Guid="89536d07-9c3b-4824-b712-2d29326fa823" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Tabledata]" DisplayName="Extract Table Data 'Extract Table Data(1)'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='SI No' ReferenceIdx='0' Name='SI No'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Previous Call Time' ReferenceIdx='1' Name='Previous Call Time'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Next Call Time' ReferenceIdx='2' Name='Next Call Time'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Time Difference in Mins.' ReferenceIdx='3' Name='Time Difference in Mins.'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='SI No' attr='fulltext' /&gt;&lt;column name='Previous Call Time' attr='fulltext' /&gt;&lt;column name='Next Call Time' attr='fulltext' /&gt;&lt;column name='Time Difference in Mins.' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_4" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="4a9c73d4-38b9-47ae-a6db-f2bca44816bc" Version="V4">
+                          <uix:NExtractData.Target>
+                            <uix:TargetAnchorable BrowserURL="https://cgvaklive.com/#/bde/reports" ContentHash="_RfXxN4xe0iS4MZMBckquQ" DesignTimeRectangle="212, 420, 1496, 412" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl aria-role='table' parentid='pr_id_69' tag='TABLE' /&gt;" Guid="61eea74f-47b9-454a-b270-465a5b69d9f5" InformativeScreenshot="12ed159ef770fad758f87ca999e96763.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/JwpnhbdUfEOVeHEs__otMA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
+                          </uix:NExtractData.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NExtractData>
+                        <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_8">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Sum]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[TableData.AsEnumerable().Sum(Function(row) CSng(row("Time Difference in Mins."))).ToString()]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {Name, Sum}]" DataTable="[dt]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="433.6,220" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:AddDataRow>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,48" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4a9c73d4-38b9-47ae-a6db-f2bca44816bc" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="341c3fe4-5451-4c2a-a63c-c918aebb2bb6" ContentHash="tS7ASpyKAkG6X9LQ0egpdQ" CvElementArea="1661, 395, 30, 29" CvType="CloseButton" DesignTimeRectangle="1658, 391, 40, 40" ElementType="Button" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-layout&amp;gt;div&amp;gt;app-reports&amp;gt;p-dialog&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button' tabindex='-1' tag='BUTTON' type='button' /&gt;" Guid="6963cf1b-6bf1-4a35-8e38-e79de0ef17a4" InformativeScreenshot="dddcadcea002efa9e21151dfbbb8e487.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/QDbRknIXNE-sMWP_fVYQEg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="341c3fe4-5451-4c2a-a63c-c918aebb2bb6" CvElementArea="1661, 395, 30, 29" CvType="CloseButton" DesignTimeRectangle="1668, 401, 20, 20" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-layout&amp;gt;div&amp;gt;app-reports&amp;gt;p-dialog&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span' isleaf='1' tag='SPAN' /&gt;" Guid="bdc6e552-0c5d-4d1d-942c-e972b010d1c0" SearchSteps="Selector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEachRow.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:ForEachRow>
+              </Sequence>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="6jaYL67_60iyhHm8v9rF5A" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAKhSURBVEhLlZYxaFRBEIYPxZCYXO55dyQaYy4rayWrYimKKQQbixSCSJogVlZptLIIWGgZLKwsgoWVYhKwUZATUigWRgS1sIghYukZwUbwyR9ulrmZ3bfvBv7i7d2bj3s3//+mkud5payMdbPGumVjXWfPYP3f0OjBr9X65F35vSKpAylj3Slj3RIgxrqcVBnIvADfXzv0vtY4ckXeL6UOupBpY92isW6TQ2JArr1Djb/D2US71pw6K/v2AI11mbFuwVi3IZtLXZ27ls9cuKRgUvuGm39GDkw8y5pTLQ801s0b61Zk0yK9efsuX1l7rgBFGqyO/6jWDz8EUDUs0rnzF3Oq6WMnVOOkZMOUnjxd9cDlR491w5SMdW3ZNKaTp894GKrT+ZVnYy3dNKKBkbGffQGX7j/oAaIW79xTjWMiIDymmoe0s/Nb8vLNb1uqcUzwKoDwm2oudfPWbQ/Z3v6+C6Kav35DNQ8J/qS4UgApQKgAB4Rq48NH1TwkxCCAM7K5FIxOhceK4cGwYGioygTBaGNygWJMQbhgdCrYAmdoAFtQlQkCxB3FmoKQuNFRuCYgjM8rFQQ+S+WbgIsbHf8jHi9lKcSHpygI8EbhwKAXpdFTVRQE8CAHBsM7ZPRUxYIA4c2BQS9yo3/6/GV3eEjt1+tesAVVLAjgwUIgNzoKj5d/zpvJ4QkFgQQqL3KjkxViQAi2oAoFATwYBXKjo3CdAs5enuu5RwaBBGK98M1evHzlb8QvlbAQEOIWkUFAawbfaZK7TAoYE3Yb4nhgF4r9Jrqp9QvEBoc9hjN6gOzxYmqj6ZMCIlUwlXxbiwIFGFu2ghUBsY2HQEkgA+NtoqJPghBdseW3LyCpax0/WATCQNDIl5E6SAmD1Tp6fCs0EGX0H5z6d754KdW5AAAAAElFTkSuQmCC" InformativeScreenshot="31e5d5497896ffeb497afd5686b001cd.jpg" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/NAM17zKQ50mofUthLq1Jjg" Selector="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" Url="https://cgvaklive.com/#/auth" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome SMSWebUi" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="569.6,2881.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="3626f0a7-393e-4fa8-a375-acec6adc700c" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="536,2641.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NSelectItem DisplayName="Select Item 'DB*'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502.4,56.8" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="G2_software" ScopeIdentifier="3626f0a7-393e-4fa8-a375-acec6adc700c" Version="V4">
+                <uix:NSelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="3">
+                    <x:String>Select Database</x:String>
+                    <x:String>G2_test</x:String>
+                    <x:String>G2_software</x:String>
+                  </scg:List>
+                </uix:NSelectItem.Items>
+                <uix:NSelectItem.Target>
+                  <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" ContentHash="lQgjQKv930G6xn92lOde_A" CvElementArea="1020, 445, 397, 62" CvType="InputBox" DesignTimeRectangle="1021, 447, 396, 59" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='form-select ng-untouched ng-pristine ng-invalid' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="0bb790fa-c607-4dd7-90ff-8fd402934168" InformativeScreenshot="c4518afaef144a8fa563f56536fa3489.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/Qa7iL98-Gky8XDgE8dUOSQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" CvTextArea="1020, 410, 37, 17" CvTextArgument="DB*" CvType="Text" DesignTimeRectangle="1021, 404, 37, 33" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='DB' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='DB*' /&gt;" Guid="e2bae905-ae2f-48ac-9e8e-fd105bcdb896" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NSelectItem.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NSelectItem>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Username*'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502.4,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="3626f0a7-393e-4fa8-a375-acec6adc700c" Text="Director" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" ContentHash="m3EGqCTgl02_2barPerFPg" CvElementArea="1020, 556, 398, 63" CvType="InputBox" DesignTimeRectangle="1021, 558, 396, 61" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='input ng-untouched ng-pristine ng-invalid' placeholder='Please Enter Username' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="bb1c02d6-21d8-49b2-99c9-ab4772898caa" InformativeScreenshot="9a511af78ef9d756c6d55dbc6fd19d56.png" IsResponsive="True" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/p3F_kW8JukSBpLiejGHghw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" CvTextArea="1020, 521, 113, 18" CvTextArgument="Username*" CvType="Text" DesignTimeRectangle="1021, 516, 115, 32" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Username' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Username' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Username*' /&gt;" Guid="67b5f9a9-0686-432b-8001-b492dc43db7b" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Password*'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502.4,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_6" IsPassword="True" ScopeIdentifier="3626f0a7-393e-4fa8-a375-acec6adc700c" Text="18Audi!@#" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" ContentHash="21P8zAOKZkS66KCFzm3rkg" CvElementArea="1020, 670, 398, 63" CvType="InputBox" DesignTimeRectangle="1021, 672, 396, 61" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='input ng-untouched ng-pristine ng-invalid' placeholder='Please Enter Password' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="4399409f-e91b-4a56-8e59-6a07aa92dac7" InformativeScreenshot="65803ab04459f8c2fd367a480bde1186.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/N6kP8FsV5E26qo_crdz-Rw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" CvTextArea="1020, 634, 106, 20" CvTextArgument="Password*" CvType="Text" DesignTimeRectangle="1021, 629, 108, 33" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Password*' /&gt;" Guid="d7ba7dc6-4f51-4166-a88d-1480c5ed4feb" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502.4,56.8" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3626f0a7-393e-4fa8-a375-acec6adc700c" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="5819d5b8-35ce-4f03-9b48-b4cad2721ed1" ContentHash="tW-ibW5zREq6Os2y7xfcug" CvElementArea="1152, 827, 131, 67" CvTextArea="1190, 850, 55, 23" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="1156, 830, 125, 62" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='input' aaname='Login' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Login' /&gt;" Guid="ccbb8762-7fb5-41be-8bff-0b4c516ad8da" InformativeScreenshot="55cc1bb8f4a582a08eb86c06180365a0.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/zobs9K60c0qFlAJXJ76aoA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <Sequence sap:VirtualizedContainerService.HintSize="502.4,2352.8" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="sd2:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Reports''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="468.8,56.8" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3626f0a7-393e-4fa8-a375-acec6adc700c" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="9d9802d4-c9c3-443d-8cb2-1cb1c693fe94" ContentHash="gArujGFTi0WC5bUMF84JQg" CvElementArea="746, 248, 24, 23" CvTextArea="671, 252, 71, 21" CvTextArgument="Reports" CvType="ArrowButton" DesignTimeRectangle="662, 236, 112, 53" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Reports ' id='navbarDropdown' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Reports ' id='navbarDropdown' tag='A' type='' class='nav-link dropdown-toggle' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Reports' /&gt;" Guid="eb220b0f-c99f-4d03-8ae5-62b627d52650" InformativeScreenshot="ef45f65e2c30093dac1f8bf8589df5e6.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/jZ-JsQ9Qv0WhoPV71CowLg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="9d9802d4-c9c3-443d-8cb2-1cb1c693fe94" CvTextArea="671, 252, 71, 21" CvTextArgument="Reports" CvType="Text" DesignTimeRectangle="671, 252, 71, 22" ElementType="Text" Guid="7a2f520d-df37-4084-9108-b5e0b728db8a" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Reports''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="468.8,56.8" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3626f0a7-393e-4fa8-a375-acec6adc700c" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="cgvaklive.com" ContentHash="2uuaN9eC-0CxwZuS_8wPkQ" DesignTimeRectangle="663, 302, 198, 42" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='reports' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='reports' tag='A' type='' class='dropdown-item' aaname='Reports' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Reports' /&gt;" Guid="0da42972-a90c-4657-8760-7fa9e69139ec" InformativeScreenshot="eecb61cd06c56ac8e6323abc94ae1c90.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/yOTcYIOED0OHFaH-X3zyuw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DisplayName="Click ''Idle Time Report''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="468.8,56.8" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3626f0a7-393e-4fa8-a375-acec6adc700c" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="4b3cea22-7165-4631-975d-9713ac3eff9a" ContentHash="NutBBDC3sEGUFRgNqc53Dw" CvTextArea="50, 502, 138, 21" CvTextArgument="Idle Time Report" CvType="Text" DesignTimeRectangle="30, 486, 179, 58" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='nav-home-tab29' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nav-home-tab29' tag='BUTTON' type='button' class='nav-link' aaname='Idle Time Report' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Idle Time Report' /&gt;" Guid="a461d5e1-6212-4aa2-885d-681c961835fc" InformativeScreenshot="2f62113988972f7cde87b0f638e94956.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/s2P2pV4VHkK6h_Q0jWxoxQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="4b3cea22-7165-4631-975d-9713ac3eff9a" CvTextArea="50, 502, 138, 21" CvTextArgument="Idle Time Report" CvType="Text" DesignTimeRectangle="50, 502, 138, 21" ElementType="Text" Guid="a52786d2-f870-4b06-a56a-7c9ccf261334" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="96b555bd-d7fc-48af-8973-39bf9477ddfc" DisplayName="CV Screen Scope 'INPUT  mfromdate'" sap:VirtualizedContainerService.HintSize="468.8,56.8" sap2010:WorkflowViewState.IdRef="CVScope_3" SendOnPremData="False" Version="V6">
+                  <p:CVScope.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                        <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Icon (125,4,20,21)&quot;]" DesignTimeCacheId="96b555bd-d7fc-48af-8973-39bf9477ddfc" DesignTimeScaleFactor="1.25" DisplayName="CV Click - 'Icon'" sap:VirtualizedContainerService.HintSize="400,218.4" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_3" InformativeScreenshot="6f4b935ee427dac164746d3a9d1fbd46" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
+                          <p:CvClickWithDescriptor.CursorPosition>
+                            <ui:CursorPosition Position="Center">
+                              <ui:CursorPosition.OffsetX>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetX>
+                              <ui:CursorPosition.OffsetY>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetY>
+                            </ui:CursorPosition>
+                          </p:CvClickWithDescriptor.CursorPosition>
+                          <p:CvClickWithDescriptor.DesignTimeDescriptor>
+                            <uc:CvDescriptor Id="556d5e86-638d-477a-af71-8135890b546e">
+                              <uc:CvDescriptor.Target>
+                                <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="125, 4, 20, 21" ElementType="Icon" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABkAAAAaCAYAAABCfffNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADDSURBVEhL7ZUxDoQgEEUpLU3Qo1h7CAyhsTDhYJzA1hLvoCbcgwPMZky2AVmB7G4s+Mlvhnl5IRQQ+EOIO/hFiiQpUZKmaaBtW3d8mavdjxJrLazrCnVdn9Va3/a9ixzymKBknmeoqgoIIdlFflmWsEQI4UE5HccxLGGMeUBOh2F4iEQp5T1uTJFDnnN+LzmOwz2Kyr7v8TcpkiJJSpEk5TmSaZrOpa7roO/75CKHvJQyLNm2DSil52Ju8Rs2xoQl38wLZ0I5He/7H4oAAAAASUVORK5CYII=" />
+                              </uc:CvDescriptor.Target>
+                            </uc:CvDescriptor>
+                          </p:CvClickWithDescriptor.DesignTimeDescriptor>
+                          <p:CvClickWithDescriptor.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="5369661e-70f6-4ed1-9f02-792eb527e726">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </p:CvClickWithDescriptor.Target>
+                        </p:CvClickWithDescriptor>
+                        <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="400,113.6" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                      </Sequence>
+                    </ActivityAction>
+                  </p:CVScope.Body>
+                  <p:CVScope.DesignTimeCache>
+                    <uc:CVCache CvUiElements="{x:Null}" OcrTexts="{x:Null}" DataSent="False" />
+                  </p:CVScope.DesignTimeCache>
+                  <p:CVScope.DesignTimeCacheContainer>
+                    <uc:CvCacheContainer>
+                      <uc:CvCacheContainer.Caches>
+                        <scg:List x:TypeArguments="uc:CVCache" Capacity="1">
+                          <uc:CVCache DataSent="False" DisplayName="Screen CV Click - Icon (Main)" Id="96b555bd-d7fc-48af-8973-39bf9477ddfc" InformativeScreenshot="84464923b3550ff35377461ad65c24af" LogicalPosition="92, 626" OcrText="" Position="92, 626" ScaleFactor="1.25" ScreenshotGuid="6fcc1a7f-6b95-4311-b174-4c6895429a48" ServerVersion="24.10.5.1">
+                            <uc:CVCache.CvAnchorRelations>
+                              <scg:List x:TypeArguments="uc:AnchorRelationInfo" Capacity="0" />
+                            </uc:CVCache.CvAnchorRelations>
+                            <uc:CVCache.CvUiElements>
+                              <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="4">
+                                <uc:CvElementInfo Category="InputBox" Description="Inputbox" Region="0, 0, 148, 34" />
+                                <uc:CvElementInfo Category="Icon" Description="Icon" Region="125, 4, 20, 21" />
+                              </scg:List>
+                            </uc:CVCache.CvUiElements>
+                            <uc:CVCache.OcrTexts>
+                              <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="0" />
+                            </uc:CVCache.OcrTexts>
+                          </uc:CVCache>
+                        </scg:List>
+                      </uc:CvCacheContainer.Caches>
+                    </uc:CvCacheContainer>
+                  </p:CVScope.DesignTimeCacheContainer>
+                  <p:CVScope.OCREngine>
+                    <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                      <ActivityFunc.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                      </ActivityFunc.Argument>
+                      <p1:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseAccents="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="400,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_3" Image="[Image]" Language="en" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                    </ActivityFunc>
+                  </p:CVScope.OCREngine>
+                  <p:CVScope.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="86f7526d-b431-4f5f-b625-0f0412397e79" InformativeScreenshot="f1a1909fa5d60904be7e3e64f516ca00" Selector="&lt;webctrl id='mfromdate' tag='INPUT' /&gt;" WaitForReady="INTERACTIVE">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                    </ui:Target>
+                  </p:CVScope.Target>
+                  <p:CVScope.UseLocalServer>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </p:CVScope.UseLocalServer>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </p:CVScope>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Get Report''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="468.8,56.8" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3626f0a7-393e-4fa8-a375-acec6adc700c" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="e0e13715-7bd1-4588-9ad6-5fd77b212078" ContentHash="JY6C-rD10UaAfzpb6AvoVA" CvElementArea="324, 628, 150, 55" CvTextArea="350, 647, 97, 21" CvTextArgument="Get Report" CvType="Button" DesignTimeRectangle="327, 632, 145, 50" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='nav-home29' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='nav-home29' tag='BUTTON' type='button' class='btn btn-primary' aaname='Get Report' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Get Report' /&gt;" Guid="6dd98399-789e-42e5-9f29-7691e0748b17" InformativeScreenshot="6b7e015bd7db694bf17d80ce3014565c.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/dN4pAJek2kmRYFx3Ka4dMw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="468.8,122.4" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DelayAfter="3" DelayBefore="3" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='SI.No' ReferenceIdx='0' Name='SI.No'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='BDE Name' ReferenceIdx='1' Name='BDE Name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Gap B/W Calls More than 15 Mins' ReferenceIdx='2' Name='Gap B/W Calls More than 15 Mins'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='SI.No' attr='fulltext' /&gt;&lt;column name='BDE Name' attr='fulltext' /&gt;&lt;column name='Gap B/W Calls More than 15 Mins' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="468.8,56.8" sap2010:WorkflowViewState.IdRef="NExtractData_5" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="3626f0a7-393e-4fa8-a375-acec6adc700c" Version="V4">
+                  <uix:NExtractData.Target>
+                    <uix:TargetAnchorable BrowserURL="https://cgvaklive.com/#/bde/reports" ContentHash="tHmY4W8G9EGOHZJNygFI4Q" DesignTimeRectangle="44, 464, 1831, 538" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='nav-home29' tag='TABLE' /&gt;" Guid="9e23763a-bc70-46fc-8253-7606ce56833c" InformativeScreenshot="afd5a763857e4233ad45cc32269b0b55.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/lQSIlULgd0O9rhLWRfhxzQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
+                  </uix:NExtractData.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NExtractData>
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="468.8,1803.2" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                  <ui:ForEachRow.Body>
+                    <ActivityAction x:TypeArguments="sd2:DataRow">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentRow" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="467.2,1600.8" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="Name" />
+                          <Variable x:TypeArguments="x:String" Name="Calls" />
+                          <Variable x:TypeArguments="sd2:DataTable" Name="Tabledata" />
+                          <Variable x:TypeArguments="x:String" Name="Sum" />
+                          <Variable x:TypeArguments="x:String" Name="str" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_9">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Name]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[CurrentRow(1).ToString]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_10">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Calls]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[CurrentRow(2).ToString]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DisplayName="Click 'Label(4)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_25" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3626f0a7-393e-4fa8-a375-acec6adc700c" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="597e503e-d40d-464d-9b27-c80422591f2d" ContentHash="1Y9kue5M0ki5OxrA93y75Q" DesignTimeRectangle="880, 741, 995, 38" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl parentid='nav-home29' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='TABLE' /&gt;&lt;webctrl type='' class='text-center' matching:class='fuzzy' fuzzylevel:class='0.0' tag='TD' aaname='{0}' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' colName='Gap B/W Calls More than 15 Mins' innertext='{0}' /&gt;&quot;, Calls)]" Guid="cd1eaa38-1320-4286-91d3-e999f4ba6aa5" InformativeScreenshot="64a94f212485decb22a5113ab672fb2e.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/_K--9iSp4kqbueDxIR1wQg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="597e503e-d40d-464d-9b27-c80422591f2d" CvTextArea="536, 746, 97, 22" CvTextArgument="Phebe-LG" CvType="Text" DesignTimeRectangle="291, 741, 589, 38" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl parentid='nav-home29' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='TABLE' /&gt;&lt;webctrl type='' class='text-center' matching:class='fuzzy' fuzzylevel:class='0.0' tag='TD' aaname='{0}' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' colName='BDE Name' innertext='{0}' /&gt;&quot;, Name)]" Guid="89536d07-9c3b-4824-b712-2d29326fa823" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Tabledata]" DisplayName="Extract Table Data 'Extract Table Data(1)'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='SI No' ReferenceIdx='0' Name='SI No'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Previous Call Time' ReferenceIdx='1' Name='Previous Call Time'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Next Call Time' ReferenceIdx='2' Name='Next Call Time'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Time Difference in Mins.' ReferenceIdx='3' Name='Time Difference in Mins.'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='SI No' attr='fulltext' /&gt;&lt;column name='Previous Call Time' attr='fulltext' /&gt;&lt;column name='Next Call Time' attr='fulltext' /&gt;&lt;column name='Time Difference in Mins.' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_6" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="3626f0a7-393e-4fa8-a375-acec6adc700c" Version="V4">
+                          <uix:NExtractData.Target>
+                            <uix:TargetAnchorable BrowserURL="https://cgvaklive.com/#/bde/reports" ContentHash="_RfXxN4xe0iS4MZMBckquQ" DesignTimeRectangle="212, 420, 1496, 412" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl aria-role='table' parentid='pr_id_69' tag='TABLE' /&gt;" Guid="61eea74f-47b9-454a-b270-465a5b69d9f5" InformativeScreenshot="12ed159ef770fad758f87ca999e96763.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/JwpnhbdUfEOVeHEs__otMA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
+                          </uix:NExtractData.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NExtractData>
+                        <ui:OutputDataTable DataTable="[Tabledata]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="433.6,112.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[str]" />
+                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="433.6,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[str]" />
+                        <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_11">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Sum]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[TableData.AsEnumerable().Sum(Function(row) CSng(row("Time Difference in Mins."))).ToString()]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="433.6,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[Name &amp;&quot; &quot; &amp; Sum]" />
+                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {Name, Sum}]" DataTable="[dt]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="433.6,220" sap2010:WorkflowViewState.IdRef="AddDataRow_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:AddDataRow>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,216.8" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3626f0a7-393e-4fa8-a375-acec6adc700c" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="cgvaklive.com" CVScreenId="341c3fe4-5451-4c2a-a63c-c918aebb2bb6" ContentHash="tS7ASpyKAkG6X9LQ0egpdQ" CvElementArea="1661, 395, 30, 29" CvType="CloseButton" DesignTimeRectangle="1658, 391, 40, 40" ElementType="Button" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-layout&amp;gt;div&amp;gt;app-reports&amp;gt;p-dialog&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button' tabindex='-1' tag='BUTTON' type='button' /&gt;" Guid="6963cf1b-6bf1-4a35-8e38-e79de0ef17a4" InformativeScreenshot="dddcadcea002efa9e21151dfbbb8e487.png" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/QDbRknIXNE-sMWP_fVYQEg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="341c3fe4-5451-4c2a-a63c-c918aebb2bb6" CvElementArea="1661, 395, 30, 29" CvType="CloseButton" DesignTimeRectangle="1668, 401, 20, 20" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-layout&amp;gt;div&amp;gt;app-reports&amp;gt;p-dialog&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span' isleaf='1' tag='SPAN' /&gt;" Guid="bdc6e552-0c5d-4d1d-942c-e972b010d1c0" SearchSteps="Selector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEachRow.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:ForEachRow>
+              </Sequence>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="6Gb-ZtmddU68bUhWoUb7PA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAKhSURBVEhLlZYxaFRBEIYPxZCYXO55dyQaYy4rayWrYimKKQQbixSCSJogVlZptLIIWGgZLKwsgoWVYhKwUZATUigWRgS1sIghYukZwUbwyR9ulrmZ3bfvBv7i7d2bj3s3//+mkud5payMdbPGumVjXWfPYP3f0OjBr9X65F35vSKpAylj3Slj3RIgxrqcVBnIvADfXzv0vtY4ckXeL6UOupBpY92isW6TQ2JArr1Djb/D2US71pw6K/v2AI11mbFuwVi3IZtLXZ27ls9cuKRgUvuGm39GDkw8y5pTLQ801s0b61Zk0yK9efsuX1l7rgBFGqyO/6jWDz8EUDUs0rnzF3Oq6WMnVOOkZMOUnjxd9cDlR491w5SMdW3ZNKaTp894GKrT+ZVnYy3dNKKBkbGffQGX7j/oAaIW79xTjWMiIDymmoe0s/Nb8vLNb1uqcUzwKoDwm2oudfPWbQ/Z3v6+C6Kav35DNQ8J/qS4UgApQKgAB4Rq48NH1TwkxCCAM7K5FIxOhceK4cGwYGioygTBaGNygWJMQbhgdCrYAmdoAFtQlQkCxB3FmoKQuNFRuCYgjM8rFQQ+S+WbgIsbHf8jHi9lKcSHpygI8EbhwKAXpdFTVRQE8CAHBsM7ZPRUxYIA4c2BQS9yo3/6/GV3eEjt1+tesAVVLAjgwUIgNzoKj5d/zpvJ4QkFgQQqL3KjkxViQAi2oAoFATwYBXKjo3CdAs5enuu5RwaBBGK98M1evHzlb8QvlbAQEOIWkUFAawbfaZK7TAoYE3Yb4nhgF4r9Jrqp9QvEBoc9hjN6gOzxYmqj6ZMCIlUwlXxbiwIFGFu2ghUBsY2HQEkgA+NtoqJPghBdseW3LyCpax0/WATCQNDIl5E6SAmD1Tp6fCs0EGX0H5z6d754KdW5AAAAAElFTkSuQmCC" InformativeScreenshot="57354359d4b0e21f2d133c1dadc84c71.jpg" Reference="oN4CxOLxHkKA_Vd5KUzSHQ/NxDo3vnjY0OyyZetL5hU_Q" Selector="&lt;html app='chrome.exe' title='SMSWebUi' /&gt;" Url="http://sms.g2techsoft.com:81/#/auth" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="568,893.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="534.4,784" sap2010:WorkflowViewState.IdRef="Sequence_17">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="500.8,724" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="IdleReport.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,391.2" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ClearRangeX DisplayName="Clear Sheet/Range/Table" HasHeaders="False" sap:VirtualizedContainerService.HintSize="433.6,148" sap2010:WorkflowViewState.IdRef="ClearRangeX_1" TargetRange="[Excel.Sheet(&quot;Sheet1&quot;)]" />
+                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Sheet1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="433.6,183.2" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[dt]" />
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
